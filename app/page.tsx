@@ -18,7 +18,14 @@ export default function HomePage() {
     date: carousel.date,
     tags: carousel.tags,
     cover: carousel.cover,
-    search: [carousel.title, carousel.summary, carousel.tags.join(" "), carousel.slides.map((slide) => slide.text).join("\n")]
+    search: [
+      carousel.title,
+      carousel.summary,
+      carousel.caption,
+      carousel.sources,
+      carousel.tags.join(" "),
+      carousel.slides.map((slide) => slide.text).join("\n"),
+    ]
       .join("\n")
       .toLowerCase(),
   }));

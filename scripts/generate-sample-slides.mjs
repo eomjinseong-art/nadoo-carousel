@@ -5,9 +5,22 @@ import path from "node:path";
 import sharp from "sharp";
 
 const root = process.cwd();
-const slug = "sample-chatgpt-prompt-5";
-const postPath = path.join(root, "content/carousels", slug, "post.json");
+const folder = "sample-chatgpt-prompt-5-20260928-1300";
+const postPath = path.join(root, "content/carousels", folder, "post.json");
 const outDir = path.dirname(postPath);
+
+function kstLabel(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return iso.slice(0, 10);
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(date)
+    .replaceAll("-", ".");
+}
 
 function ensureFonts() {
   const dir = path.join(os.homedir(), ".local/share/fonts/pretendard");
@@ -101,7 +114,7 @@ function coverSvg(post) {
   <rect width="1080" height="1350" fill="#16382c"/>
   <rect x="0" y="0" width="18" height="1350" fill="#c6a15b"/>
   <text x="88" y="128" font-family="Pretendard" font-weight="600" font-size="28" fill="#d7e6dc">나두Ai 캐러셀</text>
-  <text x="992" y="128" text-anchor="end" font-family="Pretendard" font-weight="400" font-size="26" fill="#b7c9bf">${esc(post.date.replaceAll("-", "."))}</text>
+  <text x="992" y="128" text-anchor="end" font-family="Pretendard" font-weight="400" font-size="26" fill="#b7c9bf">${esc(kstLabel(post.date))}</text>
   <text x="88" y="430" font-family="Pretendard" font-weight="600" font-size="26" fill="#e4c98a" letter-spacing="2">오늘의 카드</text>
   ${textBlock(88, 540, lines, { size: 78, fill: "#f7f3ea", weight: 700, lineHeight: 104 })}
   <rect x="88" y="860" width="120" height="6" fill="#e4c98a"/>
@@ -124,7 +137,7 @@ function contentSvg(post, slide, index) {
   <rect width="1080" height="1350" fill="#f3efe6"/>
   <rect width="1080" height="16" fill="#1e4d3a"/>
   <rect x="72" y="88" width="92" height="92" rx="18" fill="#1e4d3a"/>
-  <text x="118" y="148" text-anchor="middle" font-family="Pretendard" font-weight="700" font-size="34" fill="#f7f3ea">${String(index).padStart(2, "0")}</text>
+  <text x="118" y="148" text-anchor="middle" font-family="Pretendard" font-weight="700" font-size="34" fill="#f7f3ea">${String(index + 1).padStart(2, "0")}</text>
   ${textBlock(188, 128, heading, { size: 52, fill: "#1c1915", weight: 700, lineHeight: 68 })}
   <rect x="72" y="${cardTop}" width="936" height="${cardHeight}" rx="28" fill="#fffcf7"/>
   ${textBlock(112, cardTop + 64, fitted.lines, { size: fitted.size, fill: "#243028", weight: 400, lineHeight: fitted.lineHeight })}
@@ -157,10 +170,10 @@ function ogSvg() {
 </svg>`;
 }
 
-async function raster(svg, file, width, height) {
+async function raster(svg, file) {
   await sharp(Buffer.from(svg), { density: 144 })
-    .resize(width, height, { fit: "fill" })
-    .webp({ quality: 82 })
+    .resize(1080, 1350, { fit: "fill" })
+    .png()
     .toFile(file);
 }
 
@@ -168,15 +181,13 @@ ensureFonts();
 const post = JSON.parse(fs.readFileSync(postPath, "utf8"));
 fs.mkdirSync(outDir, { recursive: true });
 
-await raster(coverSvg(post), path.join(outDir, "01.webp"), 1080, 1350);
-for (let index = 1; index < post.slides.length; index += 1) {
-  const svg = contentSvg(post, post.slides[index], index);
-  const filename = post.slides[index].image.replace(/\.(png|jpe?g)$/i, ".webp");
-  await raster(svg, path.join(outDir, filename), 1080, 1350);
+for (let index = 0; index < post.slides.length; index += 1) {
+  const svg = index === 0 ? coverSvg(post) : contentSvg(post, post.slides[index], index);
+  await raster(svg, path.join(outDir, path.basename(post.slides[index].image)));
 }
 await sharp(Buffer.from(ogSvg()), { density: 144 })
   .resize(1200, 630, { fit: "fill" })
   .png()
   .toFile(path.join(root, "public/og.png"));
 
-console.log(`Wrote slides for ${slug} and public/og.png`);
+console.log(`Wrote ${post.slides.length} PNG slides in ${folder} and public/og.png`);

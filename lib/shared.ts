@@ -71,9 +71,69 @@ export function formatPrice(price: number | null) {
 }
 
 export function formatDate(iso: string) {
-  const [year, month, day] = iso.split("-");
-  if (!year || !month || !day) return iso;
-  return `${year}.${month}.${day}`;
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return iso;
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Seoul",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hourCycle: "h23",
+    })
+      .formatToParts(date)
+      .map((part) => [part.type, part.value]),
+  );
+  const day = `${parts.year}.${parts.month}.${parts.day}`;
+  return /T\d{2}:\d{2}/.test(iso) ? `${day} ${parts.hour}:${parts.minute}` : day;
+}
+
+export function kstStamp(iso: string) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) {
+    const digits = iso.replace(/\D/g, "");
+    return { day: digits.slice(0, 8) || "date", time: digits.slice(8, 12) || "0000" };
+  }
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Seoul",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hourCycle: "h23",
+    })
+      .formatToParts(date)
+      .map((part) => [part.type, part.value]),
+  );
+  return { day: `${parts.year}${parts.month}${parts.day}`, time: `${parts.hour}${parts.minute}` };
+}
+
+export function routeSlugFor(postSlug: string, date: string, used: Set<string>) {
+  const base = postSlug.trim() || "carousel";
+  if (!used.has(base)) {
+    used.add(base);
+    return base;
+  }
+  const stamp = kstStamp(date);
+  const candidates = [`${base}-${stamp.day}`, `${base}-${stamp.day}-${stamp.time}`];
+  for (const candidate of candidates) {
+    if (!used.has(candidate)) {
+      used.add(candidate);
+      return candidate;
+    }
+  }
+  let extra = 2;
+  let candidate = `${base}-${stamp.day}-${stamp.time}-${extra}`;
+  while (used.has(candidate)) {
+    extra += 1;
+    candidate = `${base}-${stamp.day}-${stamp.time}-${extra}`;
+  }
+  used.add(candidate);
+  return candidate;
 }
 
 export function tagHref(tag: string) {

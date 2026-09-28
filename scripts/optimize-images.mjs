@@ -34,14 +34,16 @@ for (const slug of slugs) {
     const filename = path.basename(String(slide.image || ""));
     if (!filename) continue;
     const source = path.join(dir, filename);
-    if (!fs.existsSync(source)) {
+    const webp = path.join(dir, webpName(filename));
+    const sourceFile = fs.existsSync(source) ? source : fs.existsSync(webp) ? webp : "";
+    if (!sourceFile) {
       console.error(`Missing slide image: ${source}`);
       process.exit(1);
     }
-    await sharp(source)
+    await sharp(sourceFile)
       .rotate()
-      .resize({ width: 1080, height: 1350, fit: "inside", withoutEnlargement: true })
-      .webp({ quality: 78 })
+      .resize({ width: 1080, withoutEnlargement: true })
+      .webp({ quality: 80 })
       .toFile(path.join(dest, webpName(filename)));
     count += 1;
   }

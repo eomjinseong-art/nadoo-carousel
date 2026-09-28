@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "slides": "node scripts/generate-sample-slides.mjs",
+    "import-carousel": "node scripts/import-carousel.mjs",
     "sync-sheets": "node scripts/sync-sheets.mjs",
     "check": "node scripts/sync-sheets.mjs --self-test"
   },

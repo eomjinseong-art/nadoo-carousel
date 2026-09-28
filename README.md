@@ -6,26 +6,37 @@
 
 ## 캐러셀 폴더
 
-`content/carousels/<slug>/post.json` 과 같은 폴더의 슬라이드 이미지입니다.
+하루에 네 개까지 올라옵니다. 폴더 이름은 `<slug>-<YYYYMMDD-HHMM>` 이고, 내용은 그대로 둡니다.
+
+```
+content/carousels/sample-chatgpt-prompt-5-20260928-1300/
+  slide-01.png … slide-09.png   # 항상 9장, PNG 1080x1350
+  caption.txt
+  sources.md                     # 사실·출처 URL. 페이지의 "출처"로 렌더됩니다
+  post.json                      # 폴더에서 마지막에 기록
+```
 
 ```json
 {
   "slug": "sample-chatgpt-prompt-5",
-  "date": "2026-09-28",
+  "date": "2026-09-28T13:00:00+09:00",
   "title": "제목",
   "summary": "한 줄 요약",
-  "tags": ["ChatGPT", "업무자동화"],
-  "tiktok_url": "https://www.tiktok.com/...",
-  "slides": [{ "image": "01.webp", "text": "첫 줄은 소제목\n나머지는 본문" }]
+  "tags": ["ChatGPT", "업무자동화", "프롬프트", "생산성", "글쓰기"],
+  "slides": [{ "image": "slide-01.png", "text": "첫 줄은 소제목\n나머지는 본문" }]
 }
 ```
 
-- `date` 는 `YYYY-MM-DD`.
+- `date` 는 `+09:00` 이 붙은 ISO 8601 입니다. 정렬은 이 시각이고, 화면에는 한국 시간으로 보여 줍니다. `YYYY-MM-DD` 만 있어도 읽습니다.
+- 주소는 `post.json` 의 `slug` 입니다. 같은 slug 가 이미 있으면 한국 날짜를 붙입니다. 예: `sample-chatgpt-prompt-5-20260928`. 그것도 겹치면 시각까지 붙입니다.
+- `tags` 는 `#` 없이 다섯 개입니다.
 - `tiktok_url` 은 없어도 됩니다. 있으면 글 아래에 링크가 나옵니다.
 - 슬라이드 `text` 의 첫 줄은 상세 페이지의 `h2` 가 됩니다.
-- 이미지는 png, jpg, webp 모두 됩니다. `npm run build` 전에 `scripts/optimize-images.mjs` 가 가로 1080 이하 webp 로 `public/carousels/<slug>/` 에 다시 만들고, 페이지는 `next/image` 로 그 파일을 보여 줍니다.
-- 폴더를 `main` 에 커밋하면 다음 빌드에서 목록, 태그, 사이트맵에 자동으로 들어갑니다. 별도의 목록 파일을 고칠 필요는 없습니다.
-- 샘플 슬라이드를 다시 그리려면 `npm run slides` (Pretendard 폰트를 받아 SVG 를 webp 로 변환).
+- `sources.md` 는 상세 페이지의 출처 절이 됩니다. `caption.txt` 는 폴더에 그대로 둡니다.
+- 빌드 때 `scripts/optimize-images.mjs` 가 PNG 를 가로 1080, WebP 품질 80 으로 `public/carousels/<폴더>/` 에 만듭니다. `post.json` 의 파일명이 `.png` 여도 됩니다.
+- 만든 폴더를 넣으려면 `node scripts/import-carousel.mjs <원본폴더>`. 폴더를 복사하고, 슬라이드 WebP 를 같은 자리에 만들며, `post.json` 은 고치지 않습니다.
+- 폴더를 `main` 에 커밋하면 다음 빌드에서 목록, 태그, 사이트맵에 들어갑니다.
+- 샘플 슬라이드를 다시 그리려면 `npm run slides`.
 
 ## 시트
 
@@ -37,7 +48,7 @@
 
 | 열 | 의미 |
 | --- | --- |
-| slug | 폴더 이름과 같은 주소 키 |
+| slug | `post.json` 의 slug. 이 값으로 숨깁니다. 주소도 이 값이고, 중복이면 날짜가 붙습니다 |
 | date | `YYYY-MM-DD` |
 | title | 시트에 적는 제목 (화면 제목은 `post.json`) |
 | tags | `ChatGPT\|업무자동화` 처럼 `\|` 또는 쉼표로 구분 |

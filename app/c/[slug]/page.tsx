@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CarouselViewer } from "@/components/CarouselViewer";
+import { Sources } from "@/components/Sources";
 import { Disclosure } from "@/components/Disclosure";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard } from "@/components/ProductCard";
@@ -93,6 +94,16 @@ export default async function CarouselPage({ params }: { params: Promise<{ slug:
           </section>
         ))}
       </div>
+      {carousel.sources ? (
+        <section className="mt-10" aria-labelledby="sources-heading">
+          <h2 id="sources-heading" className="text-lg font-bold">
+            출처
+          </h2>
+          <div className="mt-3">
+            <Sources markdown={carousel.sources} />
+          </div>
+        </section>
+      ) : null}
       {carousel.tiktokUrl ? (
         <p className="mt-8">
           <a href={withUtm(carousel.tiktokUrl)} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-moss underline-offset-2 hover:underline">
