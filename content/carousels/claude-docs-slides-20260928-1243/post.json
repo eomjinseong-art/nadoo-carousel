@@ -1,0 +1,51 @@
+{
+  "slug": "claude-docs-slides-20260928-1243",
+  "date": "2026-09-28T12:46:36+09:00",
+  "title": "채팅에서 PPT까지, Claude Docs·Slides로 문서·발표 한 번에",
+  "summary": "클로드 채팅과 코워크를 어디에 열지 헷갈렸다면, 이제는 고를 필요가 없습니다.",
+  "tags": [
+    "Claude",
+    "ClaudeDocs",
+    "ClaudeSlides",
+    "AI업무자동화",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "채팅에서 PPT까지\n클로드 채팅과 업무 모드가 하나로 합쳐졌다\n문서와 발표도 같은 대화에서 만든다"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "어디다 시킬지 헷갈림\n짧은 질문은 채팅,\n긴 보고서는 따로 열어야 했다.\n시작이 갈라지면 맥락도 끊긴다."
+    },
+    {
+      "image": "slide-03.png",
+      "text": "하나로 합쳐진 Claude\n이제 채팅과 코워크가 한 Claude다.\n가벼운 질문도, 큰 업무도\n같은 대화에서 Claude가 판단한다."
+    },
+    {
+      "image": "slide-04.png",
+      "text": "Claude Docs란?\n대화 안에서 함께 쓰는 문서다.\n고치고 링크로 공유할 수 있고\n유료 요금제 베타로 열린다."
+    },
+    {
+      "image": "slide-05.png",
+      "text": "Claude Slides란?\n대화에서 바로 만드는 발표 자료다.\n화면에서 고치고 바로 발표하거나\n파워포인트·PDF로 내려받는다."
+    },
+    {
+      "image": "slide-06.png",
+      "text": "지금 쓰는 3단계\n① Pro·Max Claude 앱 열기\n② 보고서·발표를 한 대화에 맡긴다\n③ 고친 뒤 PPT·PDF로 저장한다"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "이렇게 시켜 보세요\n주간보고: 지난주 이슈 정리해 문서 써 줘\n발표: 그 문서 핵심을 5장으로\n수정: 3번 장 숫자를 크게 해 줘"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\n채팅·코워크가 Claude로 합쳐졌다\nDocs·Slides로 문서·발표 제작\nPro·Max부터 무료는 곧 열린다"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장했다면 실습!\n나중에 이 글을 다시 열어서\n항목을 하나씩 직접 검색해 보고\n한 가지라도 꼭 따라 해 보세요."
+    }
+  ]
+}
