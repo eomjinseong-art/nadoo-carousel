@@ -1,0 +1,25 @@
+{
+  "updatedAt": "2026-09-28T03:18:26.778Z",
+  "products": [
+    {
+      "id": "1",
+      "category": "모니터 받침대",
+      "name": "샘플) 원목 모니터 받침대 2단",
+      "price": 29900,
+      "imageUrl": "",
+      "link": "https://www.coupang.com/np/search?q=%EC%9B%90%EB%AA%A9+%EB%AA%A8%EB%8B%88%ED%84%B0+%EB%B0%9B%EC%B9%A8%EB%8C%80",
+      "badge": "추천",
+      "memo": "샘플 행 - 쿠팡 파트너스 링크로 바꿔주세요"
+    },
+    {
+      "id": "2",
+      "category": "조명",
+      "name": "샘플) 모니터 걸이형 LED 조명",
+      "price": 39900,
+      "imageUrl": "",
+      "link": "https://www.coupang.com/np/search?q=%EB%AA%A8%EB%8B%88%ED%84%B0+%EA%B1%B8%EC%9D%B4+%EC%A1%B0%EB%AA%85",
+      "badge": "",
+      "memo": "샘플 행 - 쿠팡 파트너스 링크로 바꿔주세요"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "carousels": {
+    "id": "1JhNIZVs8ZwsSUou9KllxTctiDJ_fPoJGdPclo18Gz-o",
+    "columns": ["slug", "date", "title", "tags", "visible", "tiktok_url", "memo"]
+  },
+  "products": {
+    "id": "1Y2qEKEGBrcS9Gfiu4d7KMk2FJbxMQ6tfrOG7razG4cY",
+    "columns": ["id", "visible", "category", "name", "price", "image_url", "link", "badge", "memo"]
+  }
+}
