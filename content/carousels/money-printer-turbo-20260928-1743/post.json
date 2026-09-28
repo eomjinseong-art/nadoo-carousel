@@ -1,0 +1,51 @@
+{
+  "slug": "money-printer-turbo-20260928-1743",
+  "date": "2026-09-28T17:50:05+09:00",
+  "title": "주제만 넣으면 숏폼 완성, MoneyPrinterTurbo로 AI 영상 자동화",
+  "summary": "숏폼 하나 만들려다 하루가 사라진 적 있나요?",
+  "tags": [
+    "MoneyPrinterTurbo",
+    "AI숏폼",
+    "숏폼자동화",
+    "깃허브트렌딩",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "주제만 넣으면 숏폼\n깃허브 인기 AI 숏폼 생성기\n주제나 키워드만 있으면\n고화질 짧은 영상까지 만든다"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "숏폼이 너무 오래 걸려\n대본 쓰고, 자료 찾고, 자막 달고.\n편집까지 하면 하루가 간다.\n올릴 영상은 쌓이는데 손이 없다."
+    },
+    {
+      "image": "slide-03.png",
+      "text": "이게 하는 일은?\nMoneyPrinterTurbo는\n주제로 대본·목소리·자료·자막·음악\n편집까지 이어서 만드는 도구다."
+    },
+    {
+      "image": "slide-04.png",
+      "text": "주제에서 영상까지\n대본부터 편집까지 자동으로 간다\n단계마다 직접 고칠 수도 있다\nWebUI·API·CLI로 쓸 수 있다"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "시작하는 3단계\n① GitHub Releases에서 받기\n② start.bat으로 실행하기\n③ WebUI에 주제만 적기"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "이렇게 써 보세요\n주제: AI가 바꾼 일상 루틴\n키워드: 직장인 아침 생산성\n요청: 60초 숏폼으로 만들어 줘"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "올리는 속도가 바뀐다\n반복 숏폼은 도구에 맡긴다.\n아낀 시간은 기획·소통에 쓴다.\n혼자여도 올리는 속도가 는다."
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\n주제만 넣으면 숏폼이 나온다\n대본·자료·자막·편집을 자동화\n원클릭·Colab으로 바로 시작"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장했다면 실습!\n나중에 이 글을 다시 열어서\n항목을 하나씩 직접 검색해 보고\n한 가지라도 꼭 따라 해 보세요."
+    }
+  ]
+}
