@@ -27,6 +27,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SISTER_LINKS = [
+  { href: "https://ai-tools-site-liart-one.vercel.app", label: "나두Ai 홈" },
   { href: "https://tinalinkeom.vercel.app", label: "Tina 링크 허브" },
   { href: "https://tinalinkeom.vercel.app/ebook", label: "전자책" },
   { href: "https://nadoo-ai-lab.vercel.app", label: "나두Ai 랩" },
