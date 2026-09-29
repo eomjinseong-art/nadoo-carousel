@@ -1,0 +1,398 @@
+[
+  {
+    "date": "2026-09-30T06:58:00+09:00",
+    "topic": "메타 Muse for Small Business(소상공인·쇼피파이·퀵북스·슬랙 연결·승인 후 실행)",
+    "text": null,
+    "sources": [
+      "https://about.fb.com/news/2026/09/introducing-muse-small-business/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-30T04:58:00+09:00",
+    "topic": "엔비디아 Kumo Tabular(표 데이터 오픈 파운데이션·학습 없이 예측)",
+    "text": null,
+    "sources": [
+      "https://huggingface.co/blog/nvidia/kumo-tabular"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-30T02:59:00+09:00",
+    "topic": "마이크로소프트 Fabric IQ(코파일럿 Chat·Cowork GA·파워 BI 시맨틱)",
+    "text": null,
+    "sources": [
+      "https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-30T01:16:00+09:00",
+    "topic": "깃허브 코파일럿 Claude Sonnet 5.5 GA(단계·토큰·툴 호출↓)",
+    "text": null,
+    "sources": [
+      "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T23:15:00+09:00",
+    "topic": "앤트로픽 생명과학 검증 프로그램(LSVP·Mythos·Opus·Sonnet·생물학 세이프가드)",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/news/life-sciences-verification-program"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T21:09:00+09:00",
+    "topic": "OpenAI GPT-6.1 Astra 출시 보류(안전·범위 이탈·작업 보고)",
+    "text": null,
+    "sources": [
+      "https://www.businessinsider.com/openai-scraps-release-of-new-astra-model-citing-safety-reasons-2026-9"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T18:58:00+09:00",
+    "topic": "구글 제미니 3.8 Live Extended Thinking(음성·백그라운드 멀티스텝)",
+    "text": null,
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T17:03:00+09:00",
+    "topic": "앤트로픽 AI R&D 자동화 측정(클로드 리드 26%·에이전트 약 3만)",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T15:03:00+09:00",
+    "topic": "메타 Enterprise Platform(Muse 에이전트·API·Code·B2B)",
+    "text": null,
+    "sources": [
+      "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T13:02:00+09:00",
+    "topic": "앤트로픽·액센츄어 내장 평가(직원급 접근·본인 비용)",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/news/accenture-embedded-evaluation"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T10:59:00+09:00",
+    "topic": "구글 제미니 3.8 플래시 빌더 사례(위성·자동변속기·공룡 골격)",
+    "text": null,
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-flash-developers/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T05:12:00+09:00",
+    "topic": "클로드 Sonnet 5.5(출력 30%+·비용 최대 30%↓)",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/claude-sonnet-5-5"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T03:12:00+09:00",
+    "topic": "허깅페이스 tokenizers v1 RC(인코딩 3~30배·토큰 ID 유지)",
+    "text": null,
+    "sources": [
+      "https://huggingface.co/blog/tokenizers-v1"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-29T01:14:00+09:00",
+    "topic": "구글 AI·경제 ATLAS(과학자 매일 AI·주당 7시간·검증 병목)",
+    "text": null,
+    "sources": [
+      "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T23:22:00+09:00",
+    "topic": "H사 Holo4(컴퓨터 사용 에이전트·GUI·코드·MCP·API·OSWorld)",
+    "text": null,
+    "sources": [
+      "https://huggingface.co/blog/Hcompany/holo4"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T21:12:00+09:00",
+    "topic": "엔비디아 Open Agent Safety Platform(오픈셸+블루필드 감시)",
+    "text": null,
+    "sources": [
+      "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T19:04:00+09:00",
+    "topic": "마이크로소프트 Copilot Managed Runtime(공개 미리보기·테넌트 내 호스팅·IT 거버넌스)",
+    "text": null,
+    "sources": [
+      "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-where-you-want-run-with-confidence-now-microsoft-hosts-and-manages-the-code-created-by-copilot/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T16:55:00+09:00",
+    "topic": "OpenAI Agents API(공개 베타·Codex 하네스·서브에이전트)",
+    "text": null,
+    "sources": [
+      "https://openai.com/index/introducing-the-agents-api/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T15:09:00+09:00",
+    "topic": "구글 Private AI Compute 기기 간 서버 메모리(키는 기기에)",
+    "text": null,
+    "sources": [
+      "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T13:06:00+09:00",
+    "topic": "클로드 태그 채널에서 개인 커넥터(캘린더·드라이브) 사용",
+    "text": null,
+    "sources": [
+      "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T10:59:00+09:00",
+    "topic": "도커 Sandbox Kit Spec(에이전트 권한 OCI·CNCF)",
+    "text": null,
+    "sources": [
+      "https://www.docker.com/blog/docker-sandbox-kit-spec-cncf/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T09:04:00+09:00",
+    "topic": "도커 Cloud Sandboxes (노트북→클라우드 에이전트 격리)",
+    "text": null,
+    "sources": [
+      "https://www.docker.com/blog/introducing-cloud-sandboxes-start-on-your-laptop-finish-in-the-cloud/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T07:05:00+09:00",
+    "topic": "클로드 마켓플레이스(연결 2천+·에이전트 제품·파트너)",
+    "text": null,
+    "sources": [
+      "https://claude.com/blog/claude-marketplace"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T05:03:00+09:00",
+    "topic": "구글 제미니 3.8 라이브 Live Avatar(실시간 아바타)",
+    "text": null,
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T03:06:00+09:00",
+    "topic": "메타 Horizon Create·Studio (텍스트로 2D·3D 게임)",
+    "text": null,
+    "sources": [
+      "https://developers.meta.com/blog/meta-connect-recap-horizon-create-and-horizon-studio/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-28T01:03:00+09:00",
+    "topic": "클로드 API 거절 카테고리 선청구(bio·frontier_llm·reasoning_extraction)",
+    "text": null,
+    "sources": [
+      "https://docs.claude.com/en/docs/build-with-claude/refusals-and-fallback"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T23:07:00+09:00",
+    "topic": "메타 Muse Glimmer(30B) 로컬 오픈웨이트 멀티모달",
+    "text": null,
+    "sources": [
+      "https://ai.developer.meta.com/docs/muse-glimmer"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T21:06:00+09:00",
+    "topic": "클로드 플러그인 디렉터리 제출·검토·사용량 포털",
+    "text": null,
+    "sources": [
+      "https://claude.com/blog/build-plugins-for-claude"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T19:01:00+09:00",
+    "topic": "구글 제미니 3.8 플래시 TTS (목소리 생성·복제)",
+    "text": null,
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T17:04:00+09:00",
+    "topic": "마이크로소프트 코파일럿 Home·Code·Autopilot 개편",
+    "text": null,
+    "sources": [
+      "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T15:07:00+09:00",
+    "topic": "구글 Project Suncatcher (TPU 위성 궤도 시험)",
+    "text": null,
+    "sources": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T13:09:00+09:00",
+    "topic": "슈퍼소닉 랩스 Julia-1 (144M CPU 결정 모델) 출시",
+    "text": null,
+    "sources": [
+      "https://supersoniclabs.ia.br/julia-1/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T11:09:00+09:00",
+    "topic": "Exa Agent Ultra 딥리서치 모드 출시",
+    "text": null,
+    "sources": [
+      "https://exa.ai/blog/exa-agent-ultra"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T09:03:00+09:00",
+    "topic": "구글 독스에서 제미니 노트북을 @로 근거 소스로 사용",
+    "text": null,
+    "sources": [
+      "https://workspaceupdates.googleblog.com/2026/09/ground-ai-prompts-in-google-docs-on-existing-sources-from-Gemini-Notebook.html"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T06:55:00+09:00",
+    "topic": "클로드 N=4 초대칭 양-밀스 9루프 진폭 계산",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/research/yes-claude-can-do-nine-loops"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T04:59:00+09:00",
+    "topic": "OpenAI 최강 모델 도구사용 학습·평가 일시 중단(DNS 샌드박스 우회)",
+    "text": null,
+    "sources": [
+      "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T02:59:00+09:00",
+    "topic": "OpenAI GPT-6 Sol·Luna 추가·용도별 모델 선택",
+    "text": null,
+    "sources": [
+      "https://openai.com/index/gpt-6-astra/"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-27T00:58:00+09:00",
+    "topic": "클로드 코워크(업무 맡기기·스케줄 브리핑)",
+    "text": null,
+    "sources": [
+      "https://claude.com/product/cowork"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-26T23:07:00+09:00",
+    "topic": "클로드 Opus 5.5 출시·비용 인하·코딩·에이전트",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/claude-opus-5-5"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-26T21:04:00+09:00",
+    "topic": "구글 ADK로 AI 에이전트 8분 튜토리얼",
+    "text": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=Zqno_vux6d8"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-26T19:06:00+09:00",
+    "topic": "클로드가 박테리오파지 DNA에서 크리스퍼 비슷한 새 효소 발견(ART)",
+    "text": null,
+    "sources": [
+      "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-26T17:58:00+09:00",
+    "topic": "AI 티 나는 웹디자인(베이지 배경, 보라 카드)",
+    "text": null,
+    "sources": [
+      "https://x.com/Dontgiveup_26/status/2102879943361450415"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-26T17:58:00+09:00",
+    "topic": "비개발자 직장인도 클로드 코드로 업무 자동화·포트폴리오",
+    "text": null,
+    "sources": [
+      "https://x.com/GPTaku/status/2102988921588322352"
+    ],
+    "tags": []
+  },
+  {
+    "date": "2026-09-26T17:58:00+09:00",
+    "topic": "챗GPT 이미지 프롬프트는 구체적으로",
+    "text": null,
+    "sources": [
+      "https://x.com/AriaWestcott/status/2103149844084686991"
+    ],
+    "tags": []
+  }
+]

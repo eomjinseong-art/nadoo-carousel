@@ -22,6 +22,7 @@ export const DESK_CATEGORIES = [
 
 export const NAV_LINKS = [
   { href: "/", label: "캐러셀" },
+  { href: "/news", label: "AI 소식" },
   { href: "/desk", label: "데스크" },
   { href: "/about", label: "소개" },
 ] as const;

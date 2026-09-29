@@ -12,6 +12,7 @@
     "slides": "node scripts/generate-sample-slides.mjs",
     "import-carousel": "node scripts/import-carousel.mjs",
     "sync-sheets": "node scripts/sync-sheets.mjs",
+    "sync-ai-news": "node scripts/sync-ai-news.mjs",
     "check": "node scripts/sync-sheets.mjs --self-test"
   },
   "dependencies": {

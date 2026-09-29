@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: base, changeFrequency: "daily", priority: 1 },
+    { url: `${base}/news`, changeFrequency: "daily", priority: 0.9 },
     { url: `${base}/desk`, changeFrequency: "daily", priority: 0.8 },
     { url: `${base}/about`, changeFrequency: "monthly", priority: 0.4 },
     ...carousels.map((carousel) => ({
