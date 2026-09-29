@@ -1,0 +1,51 @@
+{
+  "slug": "claude-sonnet-55-20260929-1243",
+  "date": "2026-09-29T13:00:00+09:00",
+  "title": "더 빠르고 싸진 Claude Sonnet 5.5, 일상 업무용 AI 새 모델",
+  "summary": "앤트로픽이 9월 28일 공개한 Claude Sonnet 5.5는 이전 Sonnet 5보다 30% 이상 빠르고 작업당 비용이 최대 30% 줄어든 일상 업무용 모델입니다. 문서·슬라이드·표 작성과 버그 수정에 강하고 Claude 앱에서 바로 쓸 수 있습니다.",
+  "tags": [
+    "ClaudeSonnet55",
+    "클로드",
+    "앤트로픽",
+    "AI툴",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "더 빠르고 싸게\n일상 업무용 Claude 새 모델\n속도는 30% 이상 빨라지고\n작업당 비용은 최대 30% 줄었다"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "모델 고르다 지친다\n어떤 AI가 빠르고 싼지 헷갈린다.\n느리고 비싸면 결국 쓰다 만다.\n매일 부담 없이 쓸 AI가 필요하다."
+    },
+    {
+      "image": "slide-03.png",
+      "text": "새 모델이 나왔다\n앤트로픽이 9월 28일 공개한\nClaude Sonnet 5.5\n이전 Sonnet 5보다 확실히 좋아졌다"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "뭐가 좋아졌나\n답을 30% 이상 더 빨리 쓴다\n같은 일에 드는 돈 최대 30%↓\n문서·표 작성, 버그 수정에 강하다"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "바로 쓰는 법\nClaude 앱에서\nClaude Sonnet 5.5를 고르면 끝\n개발자용: claude-sonnet-5-5"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "어느 걸 쓸까\n일상 업무는 Claude Sonnet 5.5\n복잡한 일은 Claude Opus 5.5\n평소엔 Sonnet부터"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "이렇게 써 보세요\n보고서 초안 다듬기 (예시)\n발표 슬라이드 만들기 (예시)\n엑셀 표 깔끔하게 정리 (예시)"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nClaude Sonnet 5.5는 30% 이상 빠르다\n작업당 비용은 최대 30% 줄었다\n앱에서 바로 골라 쓴다"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n이 글을 저장해 두고 나중에 다시 보며\n하나씩 검색해 찾아보고\n한 가지씩 직접 실천해 보세요."
+    }
+  ]
+}
