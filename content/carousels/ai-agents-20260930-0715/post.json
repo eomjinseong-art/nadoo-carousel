@@ -1,0 +1,51 @@
+{
+  "slug": "ai-agents-20260930-0715",
+  "date": "2026-09-30T07:15:00+09:00",
+  "title": "말만 하면 일을 대신해 주는 AI 에이전트 3가지, dots·Grok Bot·Muse",
+  "summary": "답만 하는 챗봇을 넘어 직접 일을 대신해 주는 AI 에이전트 3가지를 비교했습니다. 오픈AI dots(ChatGPT·4,000개 넘는 앱 연결), SpaceXAI Grok Bot(여러 봇이 나눠 일하는 AI 팀원), 메타 Muse(기본 무료·현재 미국만)를 초보자 눈높이로 정리했습니다.",
+  "tags": [
+    "AI에이전트",
+    "오픈AI",
+    "그록봇",
+    "메타",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "요즘 뜨는 AI 에이전트 3\n말만 하면 일을 대신해 주는 AI\ndots·Grok Bot·Muse 한눈에 보기"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "답만 하는 챗봇, 지친다\n챗봇은 답만 주고 일은 내가 한다.\nAI 에이전트는 말만 하면\n직접 일을 대신해 주는 AI다."
+    },
+    {
+      "image": "slide-03.png",
+      "text": "오픈AI dots\nChatGPT에서 부르는 내 에이전트\n4,000개 넘는 앱과 연결해 일한다\nChatGPT 상위 요금제부터 제공"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "AI 팀원 Grok Bot\nSpaceXAI가 만든 AI 팀원\n여러 봇이 일을 나눠 동시에 한다\nSuperGrok·Cursor 유료에 포함"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "메타 Muse\n메시지 보내듯 말하면 대신해 준다\n앱·웹·WhatsApp, 기본 무료\n지금은 미국에서만 쓸 수 있다"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "셋의 공통점\n각자 클라우드 컴퓨터에서 일한다\n내가 앱을 닫아도 계속 일한다\n중요한 일은 하기 전에 먼저 묻는다"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "이렇게 맡겨 보세요\n메일 정리하고 답장 초안 (예시)\n인터뷰 녹취로 SNS 글 쓰기 (예시)\n견적서 만들고 승인 요청 (예시)"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nChatGPT를 쓰고 있다면 dots\n일을 나눠 맡기려면 Grok Bot\n무료로 써 보려면 Muse(미국)"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n저장해 두고 나중에 다시 보며\n하나씩 검색해 찾아보세요.\n작은 일 하나부터 맡겨 보세요!"
+    }
+  ]
+}
