@@ -1,5 +1,115 @@
 [
   {
+    "date": "2026-09-30T21:04:00+09:00",
+    "topic": "깃허브 코파일럿 GPT-6.1 Sol GA(에이전트 코딩·토큰·단계↓)",
+    "text": "깃허브 코파일럿에 OpenAI GPT-6.1 Sol이 들어왔어요.\n에이전트 코딩·터미널에서 쓸 수 있고, 이전보다 토큰·단계를 덜 쓴대요.\nPro+·Max·Business·Enterprise에서 고를 수 있다는데, 써보실래요?",
+    "sources": [
+      "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot/"
+    ],
+    "tags": [
+      "GitHub",
+      "Copilot",
+      "GPT-6.1 Sol",
+      "AI 소식"
+    ],
+    "title_ko": "깃허브 코파일럿에 GPT-6.1 Sol 탑재",
+    "summary_ko": "깃허브 코파일럿에 OpenAI의 최신 모델 GPT-6.1 Sol이 추가되었어요. 이 모델은 에이전트 코딩과 터미널 작업에 적합하며, 이전 모델보다 더 적은 토큰과 단계로 작업을 수행할 수 있어요. Pro+, Max, Business, Enterprise 사용자들이 사용할 수 있으니, 필요하신 분들은 한번 써보세요.",
+    "points_ko": [
+      "GPT-6.1 Sol, 깃허브 코파일럿에 추가",
+      "에이전트 코딩과 터미널 작업 지원",
+      "이전 모델보다 적은 토큰 사용",
+      "Pro+, Max, Business, Enterprise에서 이용 가능"
+    ]
+  },
+  {
+    "date": "2026-09-30T19:01:00+09:00",
+    "topic": "AWS·OpenAI Bedrock Managed Agents(프리뷰·IAM·CloudTrail 거버넌스)",
+    "text": "AWS와 OpenAI가 Bedrock Managed Agents를 프리뷰로 공개했어요.\nOpenAI Agents API를 AWS에서 돌리고 IAM·CloudTrail로 관리할 수 있대요.\n에이전트별 IAM·사람 승인도 된다는데, 써보실래요?",
+    "sources": [
+      "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/"
+    ],
+    "tags": [
+      "AWS",
+      "OpenAI",
+      "Bedrock",
+      "에이전트"
+    ],
+    "title_ko": "AWS·OpenAI Bedrock Managed Agents 프리뷰",
+    "summary_ko": "AWS와 OpenAI가 Bedrock Managed Agents를 프리뷰로 공개했어요. 이 서비스는 OpenAI의 Agents API를 기반으로 하며, AWS에서 직접 사용할 수 있어요. IAM과 CloudTrail을 통해 에이전트를 관리하고, 사람의 승인을 받을 수 있는 기능도 제공해요. 다양한 작업을 수행할 수 있는 에이전트를 만들어 보세요.",
+    "points_ko": [
+      "AWS에서 OpenAI Agents API 사용 가능",
+      "IAM으로 에이전트 관리 및 승인 기능 제공",
+      "CloudTrail로 API 활동 기록 가능",
+      "프리뷰 기간 동안 추가 요금 없음"
+    ]
+  },
+  {
+    "date": "2026-09-30T17:01:00+09:00",
+    "topic": "OpenAI GPT-6.1 Sol(Astra급·토큰 약 1/5·Work·Codex·API)",
+    "text": "OpenAI가 GPT-6.1 Sol을 공개했어요.\n코딩·컴퓨터 사용·업무에서 Astra급에 가깝고, 토큰 가격은 약 5분의 1이래요.\nChatGPT Work·Codex·API에서 쓸 수 있다는데, 비용 대비 성능 어떠세요?",
+    "sources": [
+      "https://openai.com/index/introducing-gpt-6-1-sol"
+    ],
+    "tags": [
+      "OpenAI",
+      "GPT-6.1 Sol",
+      "AI 소식",
+      "API"
+    ],
+    "title_ko": "OpenAI, GPT-6.1 Sol 공개",
+    "summary_ko": "OpenAI가 GPT-6.1 Sol을 발표했어요. 이 모델은 Astra급에 가까운 성능을 제공하면서도 토큰 가격이 약 5분의 1로 저렴해요. 코딩, 문서 이해, 비즈니스 워크플로우 등 다양한 업무에서 사용할 수 있어요. 개발자들은 이 모델을 통해 더 효율적으로 작업할 수 있을 거예요.",
+    "points_ko": [
+      "GPT-6.1 Sol, Astra급 성능 제공",
+      "토큰 가격이 기존의 5분의 1로 저렴",
+      "코딩, 문서 이해 등 다양한 업무 지원",
+      "개발자들에게 효율적인 작업 환경 제공"
+    ]
+  },
+  {
+    "date": "2026-09-30T15:02:00+09:00",
+    "topic": "허깅페이스 Transformers CI 에이전트 Serge(야간 버그픽스·29건 머지)",
+    "text": "허깅페이스 Transformers용 CI 에이전트 Serge가 나왔어요. 실패를 GPU에서 재현·검증한 뒤 PR을 올리고, 80일간 29건이 머지됐대요. 메인테이너는 검증된 패치만 보면 된대요. 여러분 팀에도 이런 에이전트 써볼 만할까요?",
+    "sources": [
+      "https://huggingface.co/blog/huggingface/anatomy-of-a-bug-fixing-agent"
+    ],
+    "tags": [
+      "허깅페이스",
+      "Serge",
+      "CI 에이전트",
+      "Transformers"
+    ],
+    "title_ko": "허깅페이스 Transformers CI 에이전트 Serge",
+    "summary_ko": "허깅페이스의 새로운 CI 에이전트 Serge가 출시되었어요. 이 에이전트는 매일 밤 버그를 찾아내고, GPU에서 재현한 후 패치를 작성해 PR을 올려요. 최근 80일 동안 29건의 버그 수정이 완료되었답니다. 팀에 이런 자동화 도구를 도입해보는 건 어떨까요?",
+    "points_ko": [
+      "Serge는 매일 밤 버그를 찾아요.",
+      "GPU에서 버그를 재현하고 패치를 작성해요.",
+      "최근 80일간 29건의 수정이 이루어졌어요.",
+      "팀의 버그 수정 작업을 자동화할 수 있어요."
+    ]
+  },
+  {
+    "date": "2026-09-30T13:05:00+09:00",
+    "topic": "OpenAI ChatGPT Space(팀·에이전트 공유 작업공간·실시간 페이지)",
+    "text": "OpenAI가 ChatGPT Space를 공개했어요.\n팀과 ChatGPT·Codex·Dots가 같은 페이지에서 실시간 편집하고, 슬랙·드라이브 연결로 문서를 갱신할 수 있어요.\nPro·Business·Enterprise용인데, 팀 협업에 써보실래요?",
+    "sources": [
+      "https://chatgpt.com/features/space/"
+    ],
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "협업",
+      "에이전트"
+    ],
+    "title_ko": "OpenAI ChatGPT Space 공개, 팀 협업 강화",
+    "summary_ko": "OpenAI가 ChatGPT Space를 출시했어요. 이 공간에서는 팀원들이 ChatGPT, Codex, Dots와 함께 실시간으로 작업할 수 있어요. 슬랙과 드라이브와 연결해 문서를 쉽게 업데이트할 수 있답니다. Pro, Business, Enterprise 사용자에게 적합한 기능이에요.",
+    "points_ko": [
+      "팀원과 실시간으로 협업 가능",
+      "ChatGPT, Codex, Dots 통합 사용",
+      "슬랙·드라이브와 연결 지원",
+      "Pro·Business·Enterprise 전용"
+    ]
+  },
+  {
     "date": "2026-09-30T11:08:00+09:00",
     "topic": "OpenAI Dots(상시 에이전트·클라우드 컴퓨터·슬랙·팀즈)",
     "text": "OpenAI가 DevDay에서 Dots를 선보였어요.\n늘 켜져 있는 에이전트로, 연결된 앱과 자체 클라우드 컴퓨터에서 일을 계속 맡아 준다고 해요.\n슬랙·팀즈에서도 쓸 수 있다는데, 업무에 바로 써볼 만할까요?",
