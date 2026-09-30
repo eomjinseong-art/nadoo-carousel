@@ -18,6 +18,7 @@ const plex = IBM_Plex_Sans_KR({
 });
 
 export const metadata: Metadata = {
+  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM" },
   metadataBase: new URL(siteUrl()),
   title: {
     default: SITE_NAME,
