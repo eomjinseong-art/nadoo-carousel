@@ -1,0 +1,30 @@
+TITLE:
+가격 ⅕로 거의 Astra급, OpenAI GPT-6.1 Sol
+
+BODY:
+성능 좋은 AI는 쓰고 싶은데
+토큰 요금이 부담되나요?
+
+OpenAI가 공개한 GPT-6.1 Sol은
+GPT-6 Sol을 업그레이드한 모델로,
+에이전트 코딩·컴퓨터 사용·전문 업무에서
+GPT-6 Astra에 가까운 지능을
+Astra 표준 입·출력 토큰 가격의 약 ⅕에 제공합니다.
+
+표준 API는 백만 토큰당
+입력 $2, 캐시 입력 $0.10, 출력 $10입니다.
+캐시 입력은 표준 입력 대비 95%,
+GPT-6 Sol 캐시 대비 50% 저렴합니다.
+모델 id는 gpt-6.1-sol 입니다.
+
+Plus·Pro·Business·Enterprise·Edu 사용자는
+ChatGPT Work와 Codex에서 바로 쓸 수 있고,
+일반 Chat에는 아직 없습니다.
+Sol 대비 코딩·문서·멀티스텝·사실성이 개선됐고,
+low effort 사실 오류율은 11.4%에서 7.7%로 줄었습니다.
+곧 GPT-6.1 Sol Ultrafast가 나오며
+Codex에서 토큰 생성이 최대 8배 빨라질 예정입니다.
+
+가장 먼저 바꿔 보고 싶은 업무는 뭔가요? 댓글로 알려 주세요.
+
+#GPT61Sol #OpenAI #ChatGPT #AI모델 #나두Ai

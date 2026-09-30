@@ -1,0 +1,51 @@
+{
+  "slug": "gpt61-sol-20260930-1746",
+  "date": "2026-09-30T17:50:29+09:00",
+  "title": "가격 ⅕로 거의 Astra급, OpenAI GPT-6.1 Sol",
+  "summary": "OpenAI GPT-6.1 Sol은 GPT-6 Sol 업그레이드로, 에이전트 코딩·컴퓨터 사용·전문 업무에서 GPT-6 Astra에 가까운 성능을 Astra 표준 입출력의 약 ⅕ 가격에 제공합니다. ChatGPT Work·Codex·API(gpt-6.1-sol)에서 이용 가능하며 일반 Chat에는 아직 없습니다.",
+  "tags": [
+    "GPT61Sol",
+    "OpenAI",
+    "ChatGPT",
+    "AI모델",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "가격 ⅕로 거의 Astra\nOpenAI 새 모델 GPT-6.1 Sol\n에이전트 코딩·컴퓨터 사용에\nAstra급에 가까운 성능, 가격 ⅕"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "성능 좋은데 비싸다\n코딩·업무용 AI는 쓰고 싶은데\n토큰 요금이 부담되고\n성능과 가격 사이에서 멈춘다."
+    },
+    {
+      "image": "slide-03.png",
+      "text": "이게 뭔가?\nGPT-6.1 Sol은 GPT-6 Sol 업그레이드\n코딩·컴퓨터 사용·업무에서\nAstra급에 가까운 성능이다."
+    },
+    {
+      "image": "slide-04.png",
+      "text": "가격이 핵심이다\nAstra 표준 입출력의 약 ⅕ 가격\n캐시 입력 $0.10/백만 토큰\n표준 대비 95%, Sol 캐시 50%↓"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "어디서 쓰나?\nChatGPT Work·Codex에서 바로\nPlus~Edu 요금제 사용자 가능\n일반 Chat에는 아직 없음"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "이렇게 써 보세요\n코드 리뷰·수정 자동화 (예시)\n문서·표 PDF 질문 답변 (예시)\n멀티스텝 업무 에이전트 (예시)"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "더 정확해졌다\nSol 대비 코딩·문서·업무↑\n사실 오류 11.4%→7.7%(low)\n곧 Ultrafast·Codex 최대 8배"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nGPT-6.1 Sol은 Astra급에 가깝다\n가격 약 ⅕·캐시 $0.10\nWork·Codex·API에서 사용"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n이 글을 저장해 두고 나중에 다시 보며\n항목을 하나씩 검색해 찾아보고\n한 가지씩 직접 실천해 보세요."
+    }
+  ]
+}
