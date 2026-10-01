@@ -1,0 +1,51 @@
+{
+  "slug": "gemini-4-argon-20261001-0851",
+  "date": "2026-10-01T09:00:00+09:00",
+  "title": "구글 새 최강 모델 Gemini 4 Argon",
+  "summary": "구글 DeepMind의 새 프론티어 모델 Gemini 4 Argon은 코딩·법률·금융·사이버 방어 등 긴 멀티스텝 작업에 강하며, 출력 한도 1M 토큰·도입가 $2/$10(이후 $4/$20)입니다. Fairwind 보안팀부터 단계 공개되며, 이후 유료 API·Google AI Ultra로 확대됩니다.",
+  "tags": [
+    "Gemini4Argon",
+    "Google",
+    "DeepMind",
+    "AI모델",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "구글 새 최강 모델\n구글 DeepMind 새 프론티어 모델\n코딩·법률·금융·사이버 긴 작업용\n출력 1M · 단계 공개"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "뭐가 진짜 최신이지?\nAI 성능 경쟁이 너무 빨라서\n따라가기 힘들고\n뭐가 진짜 최신인지 모르겠다."
+    },
+    {
+      "image": "slide-03.png",
+      "text": "이게 뭔가?\nGemini 4 Argon은 구글 새\n프론티어 모델. 코딩·법률·금융·\n사이버 방어용 긴 작업에 강하다."
+    },
+    {
+      "image": "slide-04.png",
+      "text": "왜 중요할까?\n출력 한도 1M 토큰으로 확대\n긴 멀티스텝 작업에 적합\n코딩·지식업무·사이버 방어"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "언제·얼마에 쓰나?\nFairwind 보안팀 먼저 공개\n이후 유료 API·AI Ultra\n도입가 $2/$10 → 이후 $4/$20"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "지금 준비할 일\n워크플로부터 정리해 두기 (예시)\nUltra·API 대기 목록 만들기 (예시)\n보안·프롬프트 주입 대비 (예시)"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "아직 주의할 점\n아직 일반 공개가 아니다\n단계적으로만 확대된다\n수치·벤치는 구글 발표 기준"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nGemini 4 Argon은 구글 최강\n출력 1M·도입가 $2/$10\nFairwind→API·Ultra로 공개"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n이 글을 저장해 두고 나중에 다시 보며\n항목을 하나씩 검색해 찾아보고\n한 가지씩 직접 실천해 보세요."
+    }
+  ]
+}
