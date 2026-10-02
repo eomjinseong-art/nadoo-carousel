@@ -1,0 +1,51 @@
+{
+  "slug": "caveman-20261002-2043",
+  "date": "2026-10-02T20:43:00+09:00",
+  "title": "AI 토큰 아끼는 Caveman",
+  "summary": "Caveman(JuliusBrussee/caveman)은 AI 코딩 에이전트가 설명을 짧게 말하게 해 토큰을 줄이는 Apache-2.0 스킬입니다. 깃허브 별 10.8만 개, npx skills add 한 줄로 Claude·Cursor 등 30+ 에이전트에 설치. 코드·경로·에러는 유지하고 설명만 축소. README 예시 69→19 토큰, Adobe 연구 비용 1.4~2.4배(최대 3배) 절감, JetBrains 품질 저하 없음.",
+  "tags": [
+    "Caveman",
+    "캐브맨",
+    "토큰절약",
+    "깃허브추천",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "Caveman 토큰 절약\nAI 에이전트 토큰을 줄이는 스킬\n별 10.8만 · Apache-2.0 무료\n한 줄 설치로 바로 시작"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "AI 요금이 쌓인다\n에이전트가 장황하게 설명하면\n쓰는 토큰·요금이 같이 오른다\n답은 같은데 말만 길다"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "짧게 말해 절약\nCaveman은 설명만 짧게 줄인다\n같은 진단·같은 수정을 유지\n말만 원시인처럼 짧게"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "한 줄로 설치\nnpx skills add 한 줄이면 끝\nClaude·Cursor 등 30+ 에이전트\n계정·API 키 필요 없다"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "69가 19 토큰\n긴 설명 69 → 짧은 답 19 토큰\n같은 처방(useMemo)은 그대로\n군더더기만 사라진다"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "코드는 안 건드림\n코드·명령·경로·에러 메시지는\n절대 짧게 만들지 않는다\n설명 문장만 줄인다"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "연구로도 확인\nAdobe 연구: 비용 1.4~2.4배↓\n최대 3배까지 줄어든 사례\nJetBrains: 품질 저하 없음"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nCaveman은 토큰 절약 스킬\n한 줄 설치·30+ 에이전트\n코드는 두고 설명만 짧게"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n저장해 두고 나중에 다시 보며\n하나씩 검색해 설치해 보세요.\n오늘 코딩 AI에 Caveman 켜 보기!"
+    }
+  ]
+}
