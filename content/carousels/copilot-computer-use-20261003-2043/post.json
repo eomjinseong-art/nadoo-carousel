@@ -1,0 +1,51 @@
+{
+  "slug": "copilot-computer-use-20261003-2043",
+  "date": "2026-10-03T20:43:00+09:00",
+  "title": "앱을 조작하는 Copilot Computer Use",
+  "summary": "GitHub Copilot Computer Use는 macOS·Windows용 Copilot CLI와 Copilot 앱에서 공개 프리뷰로 제공되는 기능으로, 데스크톱 앱을 클릭·입력·스크롤·드래그하며 조작합니다. /computer on·show·off와 Settings→Computer Use→Enable로 켜며, 앱 제어 전 승인이 필요하고 조직 설정으로 끌 수 있습니다.",
+  "tags": [
+    "CopilotComputerUse",
+    "깃허브코파일럿",
+    "ComputerUse",
+    "AI자동화",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "Copilot 앱 조작\n데스크톱 앱을 직접 클릭·입력\n공개 프리뷰 · macOS·Windows\nCLI와 Copilot 앱에서 사용"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "API 없는 앱은 막막\n레거시·GUI만 있는 소프트웨어\nAPI·CLI가 없어 자동화 불가\n매번 손으로 클릭만 반복"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "클릭·입력 드래그\n앱 내용·화면을 읽고\n버튼 클릭·텍스트 입력\n스크롤·드래그로 업무 진행"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "CLI·앱 공개 프리뷰\nCopilot CLI와 데스크톱 앱\nmacOS·Windows에서 사용\n공개 프리뷰로 바로 체험"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "/computer 켜기\n/computer on으로 켠다\n/computer show로 상태 확인\n끌 때는 /computer off"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "앱에서 켜는 법\nSettings→Computer Use\nEnable로 기능 켜기\n앱에서도 /computer on"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "승인 후에만 조작\n앱 제어 전 반드시 승인 요청\n항상 허용 앱은 검토·초기화\n조직 설정으로 끌 수 있음"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nCopilot이 데스크톱 앱 조작\n/computer on으로 CLI 활성화\n승인 후 제어·조직에서 차단 가능"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n저장해 두고 나중에 다시 보며\n하나씩 검색해 찾아보세요.\n오늘 Computer Use 켜 보기!"
+    }
+  ]
+}

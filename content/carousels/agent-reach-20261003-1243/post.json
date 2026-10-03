@@ -1,0 +1,51 @@
+{
+  "slug": "agent-reach-20261003-1243",
+  "date": "2026-10-03T12:43:00+09:00",
+  "title": "AI에 인터넷 눈 Agent Reach",
+  "summary": "Agent Reach(Panniantong/Agent-Reach)는 AI 에이전트에 웹·소셜 읽기·검색 능력을 붙이는 MIT 오픈소스 CLI입니다. 깃허브 별 8.8만 개, install.md 한 줄로 Claude·Cursor 등에 설치. 유료 API 없이 설정 전 웹·유튜브 자막·RSS·깃허브·B스테이션, 로그인·쿠키 후 트위터·레딧·소홍서 등. 쿠키는 로컬만 저장, agent-reach doctor로 채널 진단.",
+  "tags": [
+    "AgentReach",
+    "에이전트리치",
+    "깃허브추천",
+    "AI에이전트",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "Agent Reach 웹 눈\nAI 에이전트에 인터넷 눈 달기\n별 8.8만 · MIT 무료\n한 줄 설치로 바로 시작"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "AI가 못 보는 곳\n유튜브·트위터·레딧 봐 달라 하면\nAI는 못 보고 API는 유료다\n로그인·차단 장벽까지"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "한 줄로 설치\nAgent에게 install.md 링크\n한 줄만 붙여넣으면 끝\nClaude·Cursor 등 바로 됨"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "무료 API비 0\n오픈소스 도구만 모아 둔다\n유료 API 키 필요 없다\n쿠키는 내 PC에만 저장"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "설정 없이 바로\n웹·유튜브 자막·RSS·깃허브\nB스테이션 검색까지 즉시\n설치만 하면 바로 된다"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "설정 후 잠금 해제\n트위터·레딧·소홍서 등\n로그인·쿠키만 넣으면 된다\n페이스북·인스타도 가능"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "doctor 진단\nagent-reach doctor로 확인\n되는·안 되는 채널 한눈에\nClaude·Cursor 등 CLI 호환"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "3줄 요약\nAgent Reach는 인터넷 눈\n한 줄 설치·API비 0원\ndoctor로 채널 상태 확인"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 실천!\n저장해 두고 나중에 다시 보며\n하나씩 검색해 찾아보세요.\n오늘 Agent에게 설치 한 줄!"
+    }
+  ]
+}
