@@ -1,0 +1,51 @@
+{
+  "slug": "pdf-report-5lines-20261004-2043",
+  "date": "2026-10-04T20:43:00+09:00",
+  "title": "긴 PDF, 보고용 5줄로 끝",
+  "summary": "긴 PDF 보고서를 ChatGPT·Claude에 올려 핵심 5줄·보고 문장으로 요약하는 직장인 AI 꿀팁.",
+  "tags": [
+    "직장인AI",
+    "PDF요약",
+    "ChatGPT활용",
+    "Claude팁",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "긴 PDF 5줄로 끝\n보고서 읽느라 한 시간?\n✔ 핵심 5줄 요약\n✔ 보고 문장까지"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "이런 적 있죠?\n50페이지 열고 멍하니\n핵심만 찾다 시간 다 감"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "결과 미리보기\nChatGPT·Claude에 PDF 첨부\n핵심 5줄·보고 문장 완성"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "따라하기 1단계\nPDF를 채팅창에 올린다\n클립·+ 버튼으로 첨부"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "따라하기 2단계\n요약 프롬프트를 복붙\n문구는 캡션에 있어요"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "따라하기 3단계\n보고용 톤으로 다시 부탁\n숫자·이름은 꼭 대조"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "실수 방지 팁\n회사 기밀은 올리지 않기\n숫자·고유명사 재확인\nChatGPT 무료는 하루 3파일"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "이렇게도 응용\n회의 자료 사전 브리핑\n공고·계약서 핵심만 뽑기"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "퇴근 전 한 번 해 보기\n가장 긴 PDF 제목을\n댓글로 남겨 주세요"
+    }
+  ]
+}
