@@ -1,0 +1,51 @@
+{
+  "slug": "free-ai-before-paying-20261005-1243",
+  "date": "2026-10-05T12:43:00+09:00",
+  "title": "유료 결제 전, 무료 AI 먼저",
+  "summary": "ChatGPT·Claude·Gemini Notebook·Copilot 무료 플랜으로 되는 일과 유료로 갈 타이밍을 정리한 돈 아끼는 AI 가이드.",
+  "tags": [
+    "무료AI",
+    "AI구독료",
+    "ChatGPT무료",
+    "AI꿀팁",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "유료 결제 전 이거 먼저\nAI 구독료 월 20달러가 아깝다면\n✔ 무료로 되는 AI 4가지\n✔ 유료로 갈 타이밍까지"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "유료 vs 무료\nChatGPT Plus·Claude Pro 월 20달러\n무료도 대화·검색·파일 OK\n차이는 한도와 고급 기능"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "ChatGPT 무료\nGPT-5.6 Luna 대화 무제한\n파일 업로드는 하루 3개까지\n메일·글 초안 쓰기에 딱"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "Claude 무료\n웹 검색·파일 만들기까지 가능\n프로젝트 5개까지 무료\n한도는 5시간마다 다시 채워짐"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "Gemini Notebook\n옛 이름 NotebookLM, 지금도 무료\n자료 50개 올리고 질문 하루 50회\n음성 요약은 하루 3회"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "Copilot 무료\n로그인 없이도 바로 대화\n이미지 생성 부스트 하루 15회\n엣지 브라우저에서 웹페이지 요약"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "이럴 땐 유료가 낫다\n매일 긴 파일을 여러 개 다룰 때\n한도에 자주 막혀 일이 끊길 때\n고급 모델·딥 리서치가 필요할 때"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "나에게 맞는 선택 가이드\n메일·글 초안은 ChatGPT\n긴 자료 공부는 Gemini Notebook\n문서 파일 만들기는 Claude"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "지금 내는 AI 구독은?\n끊을까 고민 중인 구독 하나\n댓글로 적어 주세요"
+    }
+  ]
+}

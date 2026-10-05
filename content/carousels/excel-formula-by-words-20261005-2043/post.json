@@ -1,0 +1,51 @@
+{
+  "slug": "excel-formula-by-words-20261005-2043",
+  "date": "2026-10-05T20:43:00+09:00",
+  "title": "함수 몰라도, 엑셀 수식은 말로 끝",
+  "summary": "엑셀 함수 이름을 몰라도 원하는 결과를 말로 적어 ChatGPT·Copilot 무료 채팅에서 XLOOKUP·VLOOKUP·COUNTIFS 수식과 설명을 받는 직장인 AI 꿀팁.",
+  "tags": [
+    "직장인AI",
+    "엑셀수식",
+    "엑셀꿀팁",
+    "ChatGPT활용",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "함수 몰라도 말로 수식 완성\n아직도 함수 이름 검색해요?\n✔ 원하는 결과만 말하면\n✔ 엑셀 수식과 설명까지"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "이런 적 있죠?\nVLOOKUP 괄호에서 막히고\n#N/A 오류만 잔뜩\n검색한 예제는 내 표랑 안 맞음"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "결과 미리보기\n(예시) 이름 넣으면 부서 나오게\n=XLOOKUP(F2,A:A,C:C,\"없음\")\n수식 뜻까지 쉽게 설명"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "따라 하기 1단계\n표의 열 구성을 말로 적는다\n(예시) A열 이름, C열 부서\n실제 데이터는 안 넣어도 OK"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "따라 하기 2단계\n원하는 결과와 엑셀 버전을\n같이 적어 물어보기\n프롬프트는 캡션에 있어요"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "따라 하기 3단계\n수식을 붙여 넣고 결과 확인\n오류가 나면 수식과 오류를\n그대로 붙여 다시 물어보기"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "실수 방지 팁\n고객 이름·연락처는 넣지 않기\n엑셀 2019 이하엔 XLOOKUP 없음\n몇 줄은 직접 계산해 대조"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "이렇게도 응용\nCOUNTIFS로 두 조건 맞는 개수 세기\nIFERROR로 오류 대신 '없음' 표시"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "제일 막히는 함수는?\nVLOOKUP? SUMIFS?\n하나만 댓글로 알려 주세요"
+    }
+  ]
+}
