@@ -24,6 +24,19 @@ export function Header() {
       </div>
       <nav aria-label="주요" className="mx-auto flex max-w-5xl gap-1 overflow-x-auto px-4 pb-3">
         {NAV_LINKS.map((item) => {
+          if (item.external) {
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="sponsored noopener"
+                className="shrink-0 rounded-full px-3 py-2 text-sm font-semibold text-muted"
+              >
+                {item.label}
+              </a>
+            );
+          }
           const current = isCurrent(pathname, item.href);
           return (
             <Link

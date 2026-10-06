@@ -8,6 +8,9 @@ export const DISCLOSURE =
 
 export const UTM_SOURCE = "nadoo-carousel";
 
+/** 데스크 메뉴는 화면 대신 이 쿠팡 링크로 바로 이동합니다. /desk 도 next.config.ts 에서 같은 곳으로 보냅니다. */
+export const DESK_URL = "https://link.coupang.com/a/hsdzLh1vB6";
+
 export const DESK_CATEGORIES = [
   "모니터 받침대",
   "키보드·마우스",
@@ -20,12 +23,12 @@ export const DESK_CATEGORIES = [
   "기타",
 ] as const;
 
-export const NAV_LINKS = [
+export const NAV_LINKS: ReadonlyArray<{ href: string; label: string; external?: boolean }> = [
   { href: "/", label: "캐러셀" },
   { href: "/news", label: "AI 소식" },
-  { href: "/desk", label: "데스크" },
+  { href: DESK_URL, label: "데스크", external: true },
   { href: "/about", label: "소개" },
-] as const;
+];
 
 export const SISTER_LINKS = [
   { href: "https://ai-tools-site-liart-one.vercel.app", label: "나두Ai 홈" },
