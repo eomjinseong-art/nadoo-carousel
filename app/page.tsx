@@ -1,11 +1,10 @@
-import Link from "next/link";
 import { Disclosure } from "@/components/Disclosure";
 import { HomeExplorer } from "@/components/HomeExplorer";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard } from "@/components/ProductCard";
 import { getTags, getVisibleCarousels } from "@/lib/carousels";
 import { getProducts } from "@/lib/products";
-import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/shared";
+import { DESK_URL, SITE_DESCRIPTION, SITE_NAME } from "@/lib/shared";
 import { absoluteUrl, siteUrl } from "@/lib/site";
 
 export default function HomePage() {
@@ -70,9 +69,9 @@ export default function HomePage() {
             <h2 id="desk-strip-title" className="text-lg font-bold">
               데스크 추천
             </h2>
-            <Link href="/desk" className="text-sm font-semibold text-moss">
+            <a href={DESK_URL} target="_blank" rel="sponsored noopener" className="text-sm font-semibold text-moss">
               전체 보기
-            </Link>
+            </a>
           </div>
           <Disclosure className="mt-2" />
           <ul className="mt-3 flex gap-3 overflow-x-auto pb-2">
