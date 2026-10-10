@@ -1,0 +1,51 @@
+{
+ "slug": "text-to-cad-20261010-2043",
+ "date": "2026-10-10T20:43:00+09:00",
+ "title": "말로 만드는 3D 부품, 지금 깃허브에서 뜨는 이유",
+ "summary": "AI 에이전트에 3D 설계·도면·출력 검사 능력을 붙여 주는 오픈소스 text-to-cad(별 1.8만, MIT) 소개",
+ "tags": [
+  "AI에이전트",
+  "3D프린터",
+  "오픈소스",
+  "깃허브",
+  "나두Ai"
+ ],
+ "slides": [
+  {
+   "image": "slide-01.png",
+   "text": "말로 만드는 3D 부품\n\"이 크기 거치대\" 한 줄이면\n3D 프린터용 파일까지 완성"
+  },
+  {
+   "image": "slide-02.png",
+   "text": "왜 지금 뜨나\n깃허브 트렌딩 상위권, 하루 별 600개+\n이번 주에만 새 버전 5번 출시\nCodex 플러그인 목록에도 등장"
+  },
+  {
+   "image": "slide-03.png",
+   "text": "이름은 text-to-cad\n별 1.8만 · MIT 라이선스\nClaude Code·Codex·Cursor\nGemini·Grok에서 동작"
+  },
+  {
+   "image": "slide-04.png",
+   "text": "① 말로 3D 모델\n말이나 사진으로 부탁하면\nSTEP·STL·3MF 파일로 저장\nSTEP = 설계용 표준 파일"
+  },
+  {
+   "image": "slide-05.png",
+   "text": "② 도면도 자동\n치수·구멍 표시가 들어간\n제작용 도면을 PDF로 뽑아 줌"
+  },
+  {
+   "image": "slide-06.png",
+   "text": "③ 출력 전 검사\n벽 두께·지지대 양을 미리 재고\n나사·베어링 같은 기성 부품도 찾아 줌"
+  },
+  {
+   "image": "slide-07.png",
+   "text": "맞는 사람 안 맞는 사람\n맞음: 3D 프린터·시제품 만드는 분\n안 맞음: AI 에이전트를 안 쓰는 분"
+  },
+  {
+   "image": "slide-08.png",
+   "text": "시작 난이도\n에이전트에 설치를 한 줄로 부탁\nuv 프로그램 필요 · 명령어는 캡션에\n사용 통계 전송은 끌 수 있음"
+  },
+  {
+   "image": "slide-09.png",
+   "text": "주말에 다시 보기\n3D 프린터 켜는 날\n이 글 다시 꺼내 보세요"
+  }
+ ]
+}

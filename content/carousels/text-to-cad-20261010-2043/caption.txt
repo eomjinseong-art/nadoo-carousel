@@ -1,0 +1,11 @@
+말로 만드는 3D 부품, 지금 깃허브에서 뜨는 이유
+"이 크기 거치대 만들어 줘" 한 줄이면 3D 프린터용 파일까지 나옵니다.
+text-to-cad는 AI 에이전트(Claude Code·Codex·Cursor·Gemini·Grok)에 3D 설계 능력을 붙여 주는 오픈소스입니다. 말이나 사진으로 부탁하면 STEP·STL·3MF 파일을 만들고, 치수가 들어간 도면 PDF와 출력 전 검사까지 해 줍니다. 깃허브 별 1.8만, MIT 라이선스, 이번 주에만 새 버전 5번이 나왔습니다.
+
+시작 방법: 에이전트에 아래 한 줄을 그대로 보내면 설치해 줍니다.
+Install text-to-cad from https://github.com/earthtojake/text-to-cad
+(직접 설치: uv 필요, Claude Code는 claude plugin marketplace add earthtojake/text-to-cad#latest 후 claude plugin install text-to-cad@earthtojake)
+사용 통계 전송 끄기: uvx cadgen telemetry off
+
+처음 만들어 보고 싶은 부품은 뭔가요?
+#AI에이전트 #3D프린터 #오픈소스 #깃허브 #나두Ai
