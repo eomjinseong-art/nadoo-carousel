@@ -1,0 +1,51 @@
+{
+ "slug": "gpt55-retire-20261011-2043",
+ "date": "2026-10-11T20:43:00+09:00",
+ "title": "챗GPT GPT-5.5, 10월 14일 종료 전 바꿀 설정",
+ "summary": "10월 14일 GPT-5.5가 챗GPT·ChatGPT Work·Codex 전 요금제에서 종료. 사용자별 영향과 바꿀 설정 정리(API는 유지).",
+ "tags": [
+  "챗GPT",
+  "오픈AI",
+  "GPT55",
+  "AI정책",
+  "나두Ai"
+ ],
+ "slides": [
+  {
+   "image": "slide-01.png",
+   "text": "쓰던 모델 사흘 뒤 사라져요\n10월 14일, 챗GPT 메뉴가 바뀝니다\n✔ 누가 영향받나\n✔ 지금 바꿀 설정"
+  },
+  {
+   "image": "slide-02.png",
+   "text": "무엇이 바뀌나\nGPT-5.5가 10월 14일 종료\n챗GPT·ChatGPT Work·Codex\n모든 요금제에서 빠져요"
+  },
+  {
+   "image": "slide-03.png",
+   "text": "전과 후 한눈에\n전: 메뉴에서 GPT-5.5 선택 가능\n후: 챗GPT·Codex 메뉴에서 사라짐\nAPI 키로 쓰는 건 그대로"
+  },
+  {
+   "image": "slide-04.png",
+   "text": "일반 챗GPT 사용자\n대화는 새 기본 모델로 넘어가요\n말투·답 스타일은 달라질 수 있음\n중요한 답은 다시 확인"
+  },
+  {
+   "image": "slide-05.png",
+   "text": "Codex를 쓰는 사람\n챗GPT 계정 로그인이라면\nGPT-5.6 Sol 또는 GPT-6 Astra로\n미리 바꿔 두세요"
+  },
+  {
+   "image": "slide-06.png",
+   "text": "자동 작업 만든 사람\n저장한 모델 설정·예약 작업\n직접 만든 에이전트·스크립트에\nGPT-5.5가 박혀 있는지 확인"
+  },
+  {
+   "image": "slide-07.png",
+   "text": "API로 쓰는 회사\nAPI 키 방식은 계속 쓸 수 있어요\nAPI 키로 쓰는 Codex도 마찬가지\n당장 급한 변경은 없음"
+  },
+  {
+   "image": "slide-08.png",
+   "text": "14일 전 체크리스트\n모델 메뉴에서 기본값 확인\n예약 작업·에이전트 모델명 점검\n자주 쓰는 질문 새 모델로 시험"
+  },
+  {
+   "image": "slide-09.png",
+   "text": "옮길 일 하나만 적기\n옮기기 아까운 작업 하나를\n댓글로 적어 주세요"
+  }
+ ]
+}
