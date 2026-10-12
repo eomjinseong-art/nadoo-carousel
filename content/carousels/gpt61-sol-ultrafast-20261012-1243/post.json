@@ -1,0 +1,51 @@
+{
+ "slug": "gpt61-sol-ultrafast-20261012-1243",
+ "date": "2026-10-12T12:43:00+09:00",
+ "title": "빨라진 AI, 요금은 6배: GPT-6.1 Sol 초고속 모드",
+ "summary": "오픈AI GPT-6.1 Sol 초고속 모드 Ultrafast: 최대 8배 빠르지만 API 요금은 6배",
+ "tags": [
+  "AI트렌드",
+  "챗GPT",
+  "오픈AI",
+  "AI요금",
+  "코덱스"
+ ],
+ "slides": [
+  {
+   "image": "slide-01.png",
+   "text": "빨라진 AI, 요금은 6배\n속도를 돈으로 사는 시대\n✔ 최대 8배 빠른 답\n✔ 대신 요금은 6배"
+  },
+  {
+   "image": "slide-02.png",
+   "text": "무슨 변화?\n10월 8일, GPT-6.1 Sol에\n초고속 모드 Ultrafast 추가\nAPI·Codex·Work에서 쓴다"
+  },
+  {
+   "image": "slide-03.png",
+   "text": "요금 전후 비교\n기본: 입력 2달러·출력 10달러\n초고속: 입력 12달러·출력 60달러\n100만 토큰당 가격"
+  },
+  {
+   "image": "slide-04.png",
+   "text": "API 개발자 영향\n모든 API 사용자가 쓸 수 있다\n요청마다 고르는 방식이라\n급한 요청에만 켜면 된다"
+  },
+  {
+   "image": "slide-05.png",
+   "text": "Codex 사용자 영향\n코딩 작업이 훨씬 빨라지지만\n포함된 사용량이 더 빨리 줄어든다"
+  },
+  {
+   "image": "slide-06.png",
+   "text": "일반 챗GPT 영향\n채팅 탭은 이번 변경과 무관\n지금 쓰던 대로 써도 된다"
+  },
+  {
+   "image": "slide-07.png",
+   "text": "회사 계정 영향\nWork·Codex는 일부 요금제만\n엔터프라이즈는 관리자가 켜야 함"
+  },
+  {
+   "image": "slide-08.png",
+   "text": "켜기 전 체크리스트\n속도가 정말 돈이 되는 일인가\n한 달 예산 상한을 정했나\n기본 모드로 먼저 재 봤나"
+  },
+  {
+   "image": "slide-09.png",
+   "text": "속도냐 요금이냐 내 선택은?\n6배 내고라도 빨리 받고 싶은 일\n하나만 댓글로 알려 주세요"
+  }
+ ]
+}
