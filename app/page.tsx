@@ -6,6 +6,7 @@ import { getTags, getVisibleCarousels } from "@/lib/carousels";
 import { getProducts } from "@/lib/products";
 import { DESK_URL, SITE_DESCRIPTION, SITE_NAME } from "@/lib/shared";
 import { absoluteUrl, siteUrl } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export default function HomePage() {
   const carousels = getVisibleCarousels();
@@ -62,6 +63,7 @@ export default function HomePage() {
           매일 쌓이는 AI 캐러셀을 카드로 넘기고, 같은 내용을 글로 다시 읽을 수 있습니다. 계정 없이 보면 됩니다.
         </p>
       </section>
+      <CoupangCard />
       <HomeExplorer cards={cards} tags={tags} />
       {products.length > 0 ? (
         <section className="mt-10" aria-labelledby="desk-strip-title">
