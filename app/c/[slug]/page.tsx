@@ -10,6 +10,7 @@ import { getCarousel, getNeighbors, getVisibleCarousels } from "@/lib/carousels"
 import { getProducts } from "@/lib/products";
 import { formatDate, relatedProducts, tagHref, withUtm } from "@/lib/shared";
 import { absoluteUrl } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 
@@ -142,6 +143,7 @@ export default async function CarouselPage({ params }: { params: Promise<{ slug:
           </ul>
         </section>
       ) : null}
+      <CoupangCard />
     </article>
   );
 }
