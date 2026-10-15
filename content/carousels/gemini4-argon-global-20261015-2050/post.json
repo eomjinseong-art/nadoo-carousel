@@ -1,0 +1,51 @@
+{
+  "slug": "gemini4-argon-global-20261015-2050",
+  "date": "2026-10-15T20:43:00+09:00",
+  "title": "Gemini 4 Argon 전 세계 공개, 도입가는 11월 30일까지",
+  "summary": "구글 Gemini 4 Argon이 10월 13일 전 세계 공개(유료 API·AI Ultra·AI Pro, 무료 제외). API 도입가 입력 2·출력 10달러(100만 토큰당, 캐시 입력 95% 할인)는 11월 30일까지, 12월부터 4·20달러로 2배.",
+  "tags": [
+    "제미나이",
+    "구글딥마인드",
+    "AI요금",
+    "AI트렌드",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "12월부터 API 요금 2배\n구글 최신 모델, 지금은 도입가\n✔ 누가 쓸 수 있나\n✔ 무료 계정은 되나"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "Gemini 4 Argon\n전: 보안 파트너만 먼저 사용\n후: 10월 13일 전 세계 공개\nAPI 입력 요금 2→4달러(12월부터)"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "개발자·회사 유료 API\nAI Studio 유료 등급에서 사용\n입출력 합쳐 100만 토큰까지\n캐시 입력은 95% 할인"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "AI Ultra 구독자\n제미나이 앱·검색 AI 모드 사용\n코딩 도구 Antigravity도 가능\n구글 내부 코드 제출 35%↑"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "AI Pro 구독자\n제미나이 앱에서 사용 가능\n검색 AI 모드에서도 사용\nAntigravity는 Ultra 전용"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "무료 계정은 못 써요\n이번 공개에서 무료 사용자는 제외\nPro 또는 Ultra 구독이 필요\n결제 전 쓸 일부터 정해 보기"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "쓸 거면 11월 안에\n도입가는 11월 30일까지\n12월부터 입력 4·출력 20달러\n(모두 100만 토큰당 기준)"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "결제 전 확인 3가지\n내 구독이 Pro·Ultra인지\nAPI 결제가 유료 등급인지\n12월 이후 요금으로 다시 계산"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "도입가일 때 한 번 써 보기\n저장해 두고 12월 전 다시 확인\n긴 문서·코딩 일 하나 맡겨 보기\n먼저 맡길 일, 댓글로 알려 주세요"
+    }
+  ]
+}
