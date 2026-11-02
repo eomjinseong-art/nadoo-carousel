@@ -1,33 +1,34 @@
 // 엑스봇 게시 기록(/workspace/shared/nadoo-x/posts.jsonl)을 data/ai-news.json으로 옮긴다.
-// 비공개 계정 링크(tweet_url)는 싣지 않는다.
-// 새 항목에는 OpenAI(gpt-4o-mini)로 한국어 제목·요약·핵심 포인트(title_ko, summary_ko, points_ko)를 만든다.
-// 이미 요약이 있는 항목은 기존 값을 그대로 유지한다(재생성하려면 --refresh).
-// 키: 환경변수 OPENAI_API_KEY(sk-로 시작할 때) → 없으면 박스 비밀 파일(card.OPENAI_API_KEY_FIXED).
+// 비공개 계정 링크(tweet_url)는 싣지 않는다. 유료 API 호출은 하지 않는다.
+//
+// 2단계 흐름 (한국어 제목·요약·포인트는 루틴을 실행하는 어시스턴트가 직접 작성):
+//   1) node scripts/sync-ai-news.mjs --prepare [posts.jsonl] [--out=파일] [--refresh]
+//      → 요약이 필요한 새 항목을 대기 파일에 쓴다 (기본 /workspace/shared/nadoo-x/ai-news-pending.json).
+//        요약이 필요 없는 항목은 바로 data/ai-news.json에 반영한다.
+//   2) 대기 파일의 각 item에서 title_ko / summary_ko / points_ko 를 채운다.
+//   3) node scripts/sync-ai-news.mjs --apply <대기파일> [posts.jsonl]
+//      → 검증 후 data/ai-news.json에 병합한다 (빈 항목은 요약 없이 남김).
 import fs from "node:fs";
 
 const args = process.argv.slice(2);
-const refresh = args.includes("--refresh");
-const noAi = args.includes("--no-ai");
-const src = args.find((a) => !a.startsWith("--")) || "/workspace/shared/nadoo-x/posts.jsonl";
+const flag = (n) => args.includes(`--${n}`);
+const opt = (n) => args.find((a) => a.startsWith(`--${n}=`))?.split("=").slice(1).join("=");
+const refresh = flag("refresh");
+const applyIdx = args.indexOf("--apply");
+const applyFile = opt("apply") || (applyIdx >= 0 && args[applyIdx + 1] && !args[applyIdx + 1].startsWith("--") ? args[applyIdx + 1] : null);
+const mode = flag("prepare") ? "prepare" : applyFile ? "apply" : null;
+const positional = args.filter((a, i) => !a.startsWith("--") && !(applyIdx >= 0 && i === applyIdx + 1));
+const src = positional[0] || "/workspace/shared/nadoo-x/posts.jsonl";
+const PENDING = opt("out") || "/workspace/shared/nadoo-x/ai-news-pending.json";
 const out = new URL("../data/ai-news.json", import.meta.url);
-const MODEL = process.env.AI_NEWS_MODEL || "gpt-4o-mini";
 
-function loadKey() {
-  // 박스 셸에는 형식이 틀린 OPENAI_API_KEY가 잡혀 있을 수 있어 sk- 로 시작할 때만 환경변수를 쓴다.
-  const env = process.env.OPENAI_API_KEY;
-  if (env && env.startsWith("sk-")) return env;
-  const file = process.env.BOX_SECRETS || "/home/box/agent-data/box-secrets.json";
-  try {
-    const s = JSON.parse(fs.readFileSync(file, "utf8"));
-    return s?.card?.OPENAI_API_KEY_FIXED || null;
-  } catch {
-    return null;
-  }
+if (!mode) {
+  console.error("사용법: --prepare [posts.jsonl] [--out=파일] | --apply <대기파일> [posts.jsonl]");
+  process.exit(2);
 }
 
 const keyOf = (r) => `${r.date}|${String(r.topic).trim()}`;
-
-let prev = new Map();
+const prev = new Map();
 try {
   for (const it of JSON.parse(fs.readFileSync(out, "utf8"))) prev.set(keyOf(it), it);
 } catch {}
@@ -45,88 +46,59 @@ const items = rows
       tags: r.tags || [],
     };
     const old = prev.get(keyOf(base));
-    if (old?.summary_ko && !refresh) {
+    if (old?.summary_ko && !(refresh && mode === "prepare")) {
       return { ...base, title_ko: old.title_ko, summary_ko: old.summary_ko, points_ko: old.points_ko || [] };
     }
     return base;
   })
   .sort((a, b) => (a.date < b.date ? 1 : -1));
 
-async function fetchArticle(url) {
-  try {
-    const ctl = AbortSignal.timeout(15000);
-    const res = await fetch(url, { signal: ctl, headers: { "user-agent": "Mozilla/5.0 (compatible; NadooAiBot/1.0)" } });
-    if (!res.ok) return "";
-    const html = await res.text();
-    return html
-      .replace(/<script[\s\S]*?<\/script>/gi, " ")
-      .replace(/<style[\s\S]*?<\/style>/gi, " ")
-      .replace(/<(nav|footer|header|svg)[\s\S]*?<\/\1>/gi, " ")
-      .replace(/<[^>]+>/g, " ")
-      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
-      .replace(/\s+/g, " ")
-      .trim()
-      .slice(0, 9000);
-  } catch {
-    return "";
-  }
+function save() {
+  fs.writeFileSync(out, JSON.stringify(items, null, 2) + "\n");
+  console.log(`ai-news: ${items.length}개 (요약 있음 ${items.filter((i) => i.summary_ko).length}개)`);
 }
 
-async function summarize(item, key) {
-  const article = item.sources[0] ? await fetchArticle(item.sources[0]) : "";
-  const prompt = [
-    `주제(메모): ${item.topic}`,
-    item.text ? `나두Ai 게시글: ${item.text}` : "",
-    item.sources[0] ? `원문 URL: ${item.sources[0]}` : "",
-    article ? `원문 본문(발췌):\n${article}` : "(원문 본문을 가져오지 못함. 주제 메모와 게시글만 근거로 쓰고 추측은 피할 것)",
-  ].filter(Boolean).join("\n\n");
-  const body = {
-    model: MODEL,
-    temperature: 0.3,
-    response_format: { type: "json_object" },
-    messages: [
-      {
-        role: "system",
-        content:
-          "너는 한국 독자를 위한 AI 뉴스 에디터야. 영어 원문을 읽지 않아도 이해되도록 쉬운 한국어로 정리해. " +
-          "JSON으로만 답해: {\"title_ko\": 한국어 제목(35자 이내, 회사·제품명은 원어 병기 가능), " +
-          "\"summary_ko\": 3~5문장의 한국어 요약(무엇이 나왔는지, 무엇을 할 수 있는지, 누가 쓸 만한지; 해요체), " +
-          "\"points_ko\": 핵심 포인트 3~4개 배열(각 40자 이내 짧은 문장)}. 원문에 없는 수치·날짜는 지어내지 마.",
-      },
-      { role: "user", content: prompt },
-    ],
+const INSTRUCTIONS =
+  "한국 독자를 위한 AI 뉴스 에디터로서 각 item의 title_ko, summary_ko, points_ko를 채우세요. " +
+  "title_ko: 한국어 제목(35자 이내, 회사·제품명 원어 병기 가능). " +
+  "summary_ko: 3~5문장 한국어 요약(무엇이 나왔는지, 무엇을 할 수 있는지, 누가 쓸 만한지; 해요체). " +
+  "points_ko: 핵심 포인트 3~4개 배열(각 40자 이내). 원문(sources)에 없는 수치·날짜는 지어내지 마세요. " +
+  "다른 필드는 바꾸지 마세요. 채우지 못한 항목은 비워 두면 요약 없이 저장됩니다.";
+
+if (mode === "prepare") {
+  const todo = items.filter((it) => !it.summary_ko);
+  save();
+  const pending = {
+    created_at: new Date().toISOString(),
+    instructions: INSTRUCTIONS,
+    items: todo.map((it) => ({ date: it.date, topic: it.topic, text: it.text, sources: it.sources, title_ko: "", summary_ko: "", points_ko: [] })),
   };
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) throw new Error(`OpenAI ${res.status}: ${(await res.text()).slice(0, 200)}`);
-  const data = await res.json();
-  const j = JSON.parse(data.choices[0].message.content);
-  const points = Array.isArray(j.points_ko) ? j.points_ko.map((p) => String(p).trim()).filter(Boolean).slice(0, 5) : [];
-  if (!j.title_ko || !j.summary_ko) throw new Error("빈 응답");
-  return { title_ko: String(j.title_ko).trim(), summary_ko: String(j.summary_ko).trim(), points_ko: points };
+  fs.writeFileSync(PENDING, JSON.stringify(pending, null, 2) + "\n");
+  console.log(`ai-news: 요약 필요 ${todo.length}개 → ${PENDING}`);
+  process.exit(0);
 }
 
-const todo = items.filter((it) => !it.summary_ko);
-if (todo.length && !noAi) {
-  const key = loadKey();
-  if (!key) {
-    console.warn(`ai-news: OpenAI 키가 없어 ${todo.length}개 항목은 요약 없이 저장합니다.`);
-  } else {
-    let ok = 0;
-    for (const it of todo) {
-      try {
-        Object.assign(it, await summarize(it, key));
-        ok++;
-      } catch (e) {
-        console.warn(`ai-news: 요약 실패 (${it.topic}): ${e.message}`);
-      }
-    }
-    console.log(`ai-news: 한국어 요약 ${ok}/${todo.length}개 생성`);
-  }
+// apply
+const pending = JSON.parse(fs.readFileSync(applyFile, "utf8"));
+const list = Array.isArray(pending) ? pending : pending.items || [];
+const byKey = new Map(items.map((it) => [keyOf(it), it]));
+let ok = 0, bad = 0;
+for (const p of list) {
+  const it = byKey.get(keyOf(p));
+  const title = String(p.title_ko || "").trim();
+  const summary = String(p.summary_ko || "").trim();
+  const points = Array.isArray(p.points_ko) ? p.points_ko.map((x) => String(x).trim()).filter(Boolean).slice(0, 5) : [];
+  if (!it) { console.warn(`ai-news: 원본에 없는 항목 건너뜀 (${p.topic})`); bad++; continue; }
+  if (!title && !summary) continue;
+  const errs = [];
+  if (!title) errs.push("title_ko 없음");
+  if (!summary) errs.push("summary_ko 없음");
+  if (!/[가-힣]/.test(title + summary)) errs.push("한국어 아님");
+  if (title.length > 60) errs.push("title_ko 너무 김");
+  if (errs.length) { console.warn(`ai-news: 검증 실패 (${p.topic}): ${errs.join(", ")}`); bad++; continue; }
+  Object.assign(it, { title_ko: title, summary_ko: summary, points_ko: points });
+  ok++;
 }
-
-fs.writeFileSync(out, JSON.stringify(items, null, 2) + "\n");
-console.log(`ai-news: ${items.length}개 (요약 있음 ${items.filter((i) => i.summary_ko).length}개)`);
+save();
+console.log(`ai-news: 적용 ${ok}개, 실패 ${bad}개`);
+if (bad) process.exitCode = 1;
