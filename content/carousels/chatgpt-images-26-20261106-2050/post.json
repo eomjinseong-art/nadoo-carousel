@@ -1,0 +1,51 @@
+{
+  "slug": "chatgpt-images-26-20261106-2050",
+  "date": "2026-11-06T20:51:23+09:00",
+  "title": "상품컷이 GIF로 바뀐다 — ChatGPT Images 2.6, 속도 50%↑·전 요금제",
+  "summary": "오픈AI Images 2.6(2026-11-04): 챗GPT·코덱스·API 전 요금제, 생성 약 50% 빠름, GIF·Flare/Sunburst·마크업·SVG.",
+  "tags": [
+    "ChatGPT",
+    "Images26",
+    "AI이미지",
+    "숏폼제작",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "상품컷이 GIF로 바뀐다\n이미지 만드는 속도 50%↑\n루프 애니메이션까지 한곳에서"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "무엇이 바뀌었나\n챗GPT 이미지 2.6 전면 적용\n전 요금제·웹·앱·코덱스 동시"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "숫자로 보면\n생성 속도 약 50% 더 빠름\nFlare 저품질 최저 약 6초\nAPI 이미지 출력 백만토큰 30달러"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "실무 변화 1\n마스코트·상품을 GIF로\n숏폼·광고 루프 초안이 빨라짐"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "실무 변화 2\n수정 라운드가 짧아짐\n캐릭터·브랜드 디테일 유지에 유리"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "실무 변화 3\n개발은 Flare=속도·Sunburst=정밀\n마크업 수정·SVG 내보내기 가능"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "주의할 점\n저작권·초상권은 그대로 확인\n복잡 장면은 complexity를 올리면\n시간·의도치 않은 변경↑"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "당장 할 일\n챗GPT에서 이미지→GIF 한 장\n상품·캐릭터 레퍼런스 저장해 두기"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "루프 한 장만 만들어 보기\n가장 자주 쓰는 상품컷을\nGIF로 바꿔 본 뒤\n걸린 시간을 댓글로 알려 주세요"
+    }
+  ]
+}

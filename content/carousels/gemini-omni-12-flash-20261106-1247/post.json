@@ -1,0 +1,51 @@
+{
+  "slug": "gemini-omni-12-flash-20261106-1247",
+  "date": "2026-11-06T12:43:00+09:00",
+  "title": "영상 요금 30% 깎였다 — Gemini Omni 1.2 Flash, 15초·720p 초당 0.07달러",
+  "summary": "구글 딥마인드 Gemini Omni 1.2 Flash(11/5): Omni 1.1 대비 요금 30%↓·720p 초당 0.07달러, 네이티브 영상 10→15초(3~15초 1초 단위). Gemini API·Cloud GA, Vids는 구글 계정·Workspace면 15초 추가비 없음, 앱은 AI Ultra 순차. 초안 저해상도→대화 수정→업스케일. 스포츠·급격한 대본·복잡한 물리는 주의.",
+  "tags": [
+    "구글딥마인드",
+    "GeminiOmni",
+    "AI영상",
+    "AI요금",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "영상 요금 30% 깎였다\n720p 초당 0.07달러로\n✔ 15초까지 한 번에\n✔ 고치면 다시 안 만듦"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "길이·요금 전후 비교\nOmni 1.1 → 1.2 Flash\n10초→15초·요금 30%↓\n720p 초당 0.07달러"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "개발자 API부터 열렸어요\nGemini API·구글 클라우드 GA\nAI Studio에서 바로 시험\n기업은 Cloud 콘솔"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "구글 Vids 추가비 없이\n구글 계정·Workspace면\n15초 클립 추가 요금 없음\nFlow에선 대화로 수정"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "앱 구독자 Ultra부터\n제미나이 앱에 순차 적용\nGoogle AI Ultra 대상\n15초 영상 만들기 가능"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "실무 요금 아끼는 법\n저해상도로 초안 뽑기\n대화로 같은 클립 수정\n베스트만 1080p·4K"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "아직 약한 부분도 있어요\n빠른 스포츠 동작\n급격한 대본 변경\n복잡한 물리 표현은 주의"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "오늘 확인할 3가지\nAPI·Vids·앱 어디에 열렸나\n초안은 저해상도로 돌렸나\n한 달 영상 요금 다시 계산"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "저장해 두고 초안에 쓰기\n다음 숏폼·광고 초안 때\n저해상도→수정→업스케일\n이 흐름만 기억해 주세요"
+    }
+  ]
+}
