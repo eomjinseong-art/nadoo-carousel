@@ -1,0 +1,51 @@
+{
+  "slug": "gpt61-terra-20261106-0901",
+  "date": "2026-11-06T09:02:33+09:00",
+  "title": "화면 작업 요금 절반, GPT-6.1 테라가 바꾼 것",
+  "summary": "오픈AI가 2026-10-26 GPT-6.1 Terra 공개. 컴퓨터 사용·시각 추론 강조, 표준 API 요금은 5.6 Terra·6.1 Sol 대비 50% 인하(입력 1·출력 5달러/100만 토큰). Plus·Pro·Enterprise·Edu의 ChatGPT Work·Codex와 API gpt-6.1-terra에서 사용.",
+  "tags": [
+    "오픈AI",
+    "GPT61",
+    "업무자동화",
+    "AI트렌드",
+    "나두Ai"
+  ],
+  "slides": [
+    {
+      "image": "slide-01.png",
+      "text": "화면 작업 이제 싸게 맡긴다\n폼·도면·영상까지 컴퓨터로\nAPI 요금은 이전 대비 절반\nPlus·Pro·Work에서 바로"
+    },
+    {
+      "image": "slide-02.png",
+      "text": "뭐가 바뀌었나\n오픈AI가 컴퓨터 사용·시각\n추론을 더 빠르고 싸게 만든\nGPT-6.1 테라를 공개했어요"
+    },
+    {
+      "image": "slide-03.png",
+      "text": "날짜·요금 핵심만\n2026년 10월 26일 공개\n입력 100만 토큰 1달러\n출력 100만 토큰 5달러"
+    },
+    {
+      "image": "slide-04.png",
+      "text": "실무 ① 요금 절반\nGPT-5.6 테라·6.1 솔 대비\n표준 API 요금 50% 인하\n대량 자동화에 유리해요"
+    },
+    {
+      "image": "slide-05.png",
+      "text": "실무 ② 화면 조작\n제안서 초안·양식 입력\n도면 해석·영상 편집까지\n화면을 보고 직접 조작"
+    },
+    {
+      "image": "slide-06.png",
+      "text": "실무 ③ 같은 한도\n챗GPT Work·코덱스에서\n같은 사용 한도로 더 많은 일\nPlus·Pro·Enterprise·Edu"
+    },
+    {
+      "image": "slide-07.png",
+      "text": "아직 주의할 점\n복잡한 코딩은 솔·아스트라가\n더 나을 수 있어요\n숫자는 공식 발표 기준"
+    },
+    {
+      "image": "slide-08.png",
+      "text": "당장 확인할 일\nWork·코덱스 모델 칸 확인\nAPI면 테라 모델로 바꿔 보기\n자동화 비용 다시 계산"
+    },
+    {
+      "image": "slide-09.png",
+      "text": "오늘 폼 하나 맡겨 보기\n가장 자주 하는 화면 작업\n하나만 댓글로 적어 주세요\n다음 편에 같이 짚어 볼게요"
+    }
+  ]
+}
