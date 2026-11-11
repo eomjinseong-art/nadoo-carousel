@@ -1,0 +1,23 @@
+# agent-desktop (Vercel Labs) — 출처 (2026-11-11 20:50 KST 확인)
+- GitHub 저장소 README: https://github.com/vercel-labs/agent-desktop
+  - "Computer use for AI agents: see and operate desktop apps on macOS, Windows, and Linux through the OS accessibility tree."
+  - 스크린샷·픽셀 매칭 없이 접근성 트리를 JSON으로 읽고 요소마다 ref 부여 → ref 클릭/입력 → 다시 읽어 확인
+  - "The loop lives in your agent; agent-desktop has no model inside." CLI + C 라이브러리
+  - "Headless by default. Ref actions use the accessibility API without moving the pointer or taking focus."
+  - 지원: macOS 13+, Windows 10 1809+, Ubuntu 24.04+ (x64·ARM64)
+  - 설치: npm install -g agent-desktop / agent-desktop status / agent-desktop permissions --guide (macOS 손쉬운 사용 권한) / agent-desktop skills get desktop
+  - 개인 정보 경고: 스냅샷·클립보드·스크린샷·출력에 개인 데스크톱 내용이 담길 수 있음
+  - 라이선스 Apache-2.0
+- GitHub API (2026-11-11 확인): stargazers_count 21,749 → "2.1만"(내림), license apache-2.0
+- 릴리스: v1.0.0 published 2026-10-28T01:15:24Z (= 10/28 10:15 KST) https://github.com/vercel-labs/agent-desktop/releases/tag/v1.0.0 ; v1.2.0 2026-11-05T02:43Z
+- CHANGELOG: https://github.com/vercel-labs/agent-desktop/blob/main/CHANGELOG.md
+  - 1.0.0: macOS·Windows·Linux 통합 CLI·C 라이브러리 1.0 (Linux 지원 추가)
+  - 1.2.0 (2026-11-05): `agent-desktop mcp` — MCP 서버(stdio) 추가
+- 공식 문서: https://agent-browser.dev/desktop — "A tool that agents call. It is not an agent." "No model inside." "Desktop apps only… use agent-browser for [web pages]" "Limited to what apps expose."
+- npm: agent-desktop latest 1.2.0, 1.0.0 게시 2026-10-28T01:16Z
+- 왜 지금(보조, 제3자): whatstrending.ai 2026-11-04~11 7일 별 증가 +8,695(AI 저장소 중 4위); MarkTechPost 2026-10-31 기사; Spectrum Web 2026-11-02 기사(Chris Tate 10/31 소개 글 인용)
+## 불확실
+- CHANGELOG는 1.0.0 날짜를 2026-10-27로 적음(미국 시간 기준 추정). 슬라이드는 GitHub 릴리스·npm 게시 시각(10/28 UTC·KST) 기준 "10월 28일".
+- 7일 별 증가 수치는 제3자 집계라 슬라이드·캡션에 숫자로 쓰지 않음.
+- Windows는 권한 부여 없이 같은 권한 수준 앱 사용 가능(제3자 기사) — 미기재.
+- 실제 작업 성공률·벤치마크 없음(제3자 기사도 "독립 벤치마크 없음").
