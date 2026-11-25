@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { Disclosure } from "@/components/Disclosure";
 import { SISTER_LINKS, withUtm } from "@/lib/shared";
@@ -25,6 +26,7 @@ export default function AboutPage() {
         <p>데스크 코너는 책상 위 사무용품과 데스크테리어를 쿠팡 파트너스 링크로 소개합니다.</p>
       </div>
       <Disclosure className="mt-4" />
+      <NadooAd inline />
       <h2 className="mt-8 text-base font-bold">함께 보면 좋은 사이트</h2>
       <ul className="mt-3 space-y-2 text-sm">
         {SISTER_LINKS.map((item) => (
