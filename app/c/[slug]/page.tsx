@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -87,11 +88,13 @@ export default async function CarouselPage({ params }: { params: Promise<{ slug:
           </p>
         ) : null}
       </header>
+      <NadooAd inline />
       <div className="mt-8 space-y-8">
         {carousel.slides.map((slide, index) => (
           <section key={slide.src}>
             <h2 className="text-lg font-bold leading-snug">{slide.heading || `슬라이드 ${index + 1}`}</h2>
             {slide.body ? <p className="mt-2 text-sm leading-7 whitespace-pre-line">{slide.body}</p> : null}
+            {index > 0 && index === Math.floor(carousel.slides.length / 2) ? <NadooAd inline /> : null}
           </section>
         ))}
       </div>
@@ -128,6 +131,7 @@ export default async function CarouselPage({ params }: { params: Promise<{ slug:
           </Link>
         ) : null}
       </nav>
+      <NadooAd inline />
       {products.length > 0 ? (
         <section className="mt-10" aria-labelledby="related-desk">
           <h2 id="related-desk" className="text-lg font-bold">

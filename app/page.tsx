@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Disclosure } from "@/components/Disclosure";
 import { HomeExplorer } from "@/components/HomeExplorer";
 import { JsonLd } from "@/components/JsonLd";
@@ -65,6 +66,7 @@ export default function HomePage() {
       </section>
       <CoupangCard />
       <HomeExplorer cards={cards} tags={tags} />
+      <NadooAd inline />
       {products.length > 0 ? (
         <section className="mt-10" aria-labelledby="desk-strip-title">
           <div className="flex items-end justify-between gap-3">

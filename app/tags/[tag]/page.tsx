@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CarouselCard } from "@/components/CarouselCard";
@@ -32,6 +33,7 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
       <p className="text-xs font-semibold text-moss">태그</p>
       <h1 className="mt-2 text-[1.75rem] font-bold leading-tight">#{decoded}</h1>
       <p className="mt-2 text-sm text-muted">{carousels.length}개의 캐러셀</p>
+      <NadooAd inline />
       <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
         {carousels.map((carousel, index) => (
           <li key={carousel.slug}>

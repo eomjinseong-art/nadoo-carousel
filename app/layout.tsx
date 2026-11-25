@@ -1,3 +1,5 @@
+import Script from "next/script";
+import { NadooAd } from "@/components/NadooAd";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_KR } from "next/font/google";
@@ -55,10 +57,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         <main id="content" className="mx-auto w-full max-w-5xl flex-1 px-4 pb-12">
           {children}
+          <NadooAd inline />
         </main>
         <Footer />
         <Analytics />
         <AnalyticsEvents />
+        <Script src="https://nadoo-ads.vercel.app/ads.js" strategy="afterInteractive" />
       </body>
     </html>
   );

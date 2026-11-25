@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { dayKey, getNews, newsId, sourceLabel } from "@/lib/news";
@@ -44,6 +45,7 @@ export default function NewsPage() {
       <p className="mt-2 text-sm leading-6 text-muted">
         나두Ai가 하루 동안 눈여겨본 AI 소식과 쓸 만한 팁을 한국어로 요약합니다. 영어 원문을 읽지 않아도 핵심을 알 수 있어요.
       </p>
+      <NadooAd inline />
       <p className="mt-1 text-xs text-muted">지금까지 {items.length}개</p>
 
       {days.map((day) => (
