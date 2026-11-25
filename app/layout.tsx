@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
+  alternates: { canonical: siteUrl() },
   openGraph: {
     type: "website",
     locale: "ko_KR",
